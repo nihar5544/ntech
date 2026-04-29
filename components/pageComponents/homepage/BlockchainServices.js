@@ -1,5 +1,4 @@
 import ScrollAnimation from "@/components/Animation";
-import Images from "@/components/ui/image";
 import React, { useState } from "react";
 
 export default function BlockchainServices({ data, card, heading }) {
@@ -34,25 +33,29 @@ export default function BlockchainServices({ data, card, heading }) {
           <h3 className="text-[16px] py-4 text-white">{card?.description}</h3>
         </div>
         <div className="col-span-3">
-          <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             {card?.list &&
               card?.list.length &&
               card?.list.map((item) => (
-                <div
+                <article
                   key={item.id}
-                  className="rounded-[20px] w-fit cursor-pointer transform hover:scale-110 hover:shadow-lg bg-[#d8e3ff] hover:bg-[#fff] transition-transform duration-300 ease-in-out"
-                  style={{ transition: "all 0.2s ease 0s" }}
+                  className="relative overflow-hidden rounded-2xl cursor-pointer h-[200px] group"
                 >
-                  <Images
-                    Path={item?.image}
-                    height={100}
-                    width={350}
-                    className="md:max-h-[140px] md:min-h-[140px] rounded-t-[20px]"
+                  <img
+                    src={item?.image}
+                    alt={item?.alt || item?.title}
+                    width={800}
+                    height={600}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                   />
-                  <h3 className="text-[16px] text-center py-4 font-semibold">
-                    {item?.title}
-                  </h3>
-                </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                    <p className="text-[15px] font-bold leading-tight">{item?.title}</p>
+                    <span className="text-[12px] font-normal text-white/70">{item?.tag}</span>
+                  </div>
+                </article>
               ))}
           </div>
         </div>

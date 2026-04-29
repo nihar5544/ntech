@@ -1,0 +1,49 @@
+{
+  "logo": "/images/logo.png",
+  "title": "ntech — Your Trusted Digital Solutions Partner",
+  "description": "We build professional websites, web applications, games, and provide SEO and IT support services that help businesses thrive in the digital world.",
+  "socialMedia": [
+    { "id": 1, "image": "/images/icons/social/linkedin.svg", "title": "LinkedIn", "link": "https://www.linkedin.com/company/ntechio/" },
+    { "id": 2, "image": "/images/icons/social/x.svg", "title": "Twitter", "link": "https://twitter.com/ntechio" },
+    { "id": 3, "image": "/images/icons/social/facebook.svg", "title": "Facebook", "link": "https://www.facebook.com/people/ntech/61550862007144/" },
+    { "id": 4, "image": "/images/icons/social/youtube.svg", "title": "YouTube", "link": "https://www.youtube.com/@kntech" }
+  ],
+  "supportedNetworks1": [
+    { "title": "Web Page Development", "link": "/services/web-page" },
+    { "title": "Web Application", "link": "/services/web-application" },
+    { "title": "Game Development", "link": "/services/game-development" },
+    { "title": "Graphic Designing", "link": "/services/graphic-designing" },
+    { "title": "SEO Services", "link": "/services/seo" }
+  ],
+  "supportedNetworks2": [
+    { "title": "IT Service & Support", "link": "/services/it-service-support" },
+    { "title": "E-Commerce", "link": "/industry/ecommerce" },
+    { "title": "Healthcare IT", "link": "/industry/healthcare" },
+    { "title": "Gaming Industry", "link": "/industry/gaming" }
+  ],
+  "companyLinks": [
+    { "title": "Home", "link": "/" },
+    { "title": "About Us", "link": "/about-us" },
+    { "title": "Portfolio", "link": "/portfolio" },
+    { "title": "Media", "link": "/media" },
+    { "title": "Contact Us", "link": "/contact-us" }
+  ],
+  "usefulLinks": [
+    { "title": "Web Page Development", "link": "/services/web-page" },
+    { "title": "Web Application", "link": "/services/web-application" },
+    { "title": "Graphic Designing", "link": "/services/graphic-designing" },
+    { "title": "SEO Services", "link": "/services/seo" }
+  ],
+  "connectLinks": [
+    { "title": "LinkedIn", "link": "https://www.linkedin.com/company/ntechio/" },
+    { "title": "Twitter", "link": "https://twitter.com/ntechio" },
+    { "title": "Facebook", "link": "https://www.facebook.com/people/ntech/61550862007144/" },
+    { "title": "YouTube", "link": "https://www.youtube.com/@kntech" }
+  ],
+  "locations": [
+    { "title": "New York, USA", "link": "#" },
+    { "title": "London, UK", "link": "#" },
+    { "title": "Dubai, UAE", "link": "#" },
+    { "title": "Singapore", "link": "#" }
+  ]
+}

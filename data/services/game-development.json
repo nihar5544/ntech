@@ -1,0 +1,78 @@
+{
+  "banner": {
+    "title": "Professional Game Development Services",
+    "description": "We create engaging, immersive games for mobile, web, and desktop platforms. From hyper-casual mobile games to feature-rich multiplayer experiences, our expert developers bring your game concept to life.",
+    "schedualCallButton": { "title": "Schedule a Discovery Call" },
+    "projectCostButton": { "title": "Get Project Cost" },
+    "image": "https://placehold.co/550x500/0f172a/a855f7?text=Game+Development"
+  },
+  "developmentServices": {
+    "title": "Our Game Development Services",
+    "description": "Full-cycle game development from concept and design to development, testing, and deployment.",
+    "subtitle": "End-to-End Game Solutions",
+    "cards": [
+      { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Mobile+Games", "title": "Mobile Game Development", "description": "Engaging iOS and Android games — from hyper-casual puzzle titles to feature-rich RPGs — built for maximum player retention." },
+      { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Web+Games", "title": "Web-Based Games", "description": "Browser-playable HTML5 games that work seamlessly across all devices without downloads or plugins." },
+      { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=PC+Console+Games", "title": "PC & Console Games", "description": "High-fidelity desktop and console games with advanced graphics, physics, and immersive gameplay mechanics." },
+      { "id": 4, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Multiplayer+Games", "title": "Multiplayer & Online Games", "description": "Real-time multiplayer games with matchmaking, leaderboards, chat, and scalable backend infrastructure." },
+      { "id": 5, "image": "https://placehold.co/350x200/010427/7b44d6?text=AR+VR+Games", "title": "AR / VR Games", "description": "Immersive augmented reality and virtual reality game experiences for mobile AR and VR headset platforms." },
+      { "id": 6, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Educational+Games", "title": "Educational Games", "description": "Gamified learning experiences that make education fun and effective for students of all ages." }
+    ]
+  },
+  "automateTasks": {
+    "title": "From Concept to Game Store — We Handle It All",
+    "description": "Building a successful game requires more than just coding. We handle game design, art direction, mechanics balancing, backend infrastructure, and app store submission — so you can focus on your vision while we execute flawlessly.",
+    "image": "/images/extraBg.png",
+    "sideImage": "https://placehold.co/300x300/0f172a/a855f7?text=Game+Launch",
+    "Button": { "title": "Start Your Game Project", "link": "/contact-us", "icon": "" }
+  },
+  "ClientsTrustUs": {
+    "title": "Studios & Brands That Launched With Us",
+    "subtitle": "From indie studios to enterprise entertainment brands, we've shipped games enjoyed by millions of players worldwide.",
+    "list": [
+      { "id": 1, "image": "https://placehold.co/150x60/1a1a2e/9b30d9?text=PixelStudio", "title": "PixelStudio" },
+      { "id": 2, "image": "https://placehold.co/150x60/010427/7b44d6?text=GameForge", "title": "GameForge" },
+      { "id": 3, "image": "https://placehold.co/150x60/0d0d1f/6b00d7?text=PlayZone", "title": "PlayZone" },
+      { "id": 4, "image": "https://placehold.co/150x60/1a0a2e/9b30d9?text=ArcadeLabs", "title": "ArcadeLabs" },
+      { "id": 5, "image": "https://placehold.co/150x60/010427/7b44d6?text=QuestGames", "title": "QuestGames" },
+      { "id": 6, "image": "https://placehold.co/150x60/1a1a2e/6b00d7?text=FunWorld", "title": "FunWorld" }
+    ]
+  },
+  "moreUseCases": [
+    {
+      "title": "Mobile Games",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Casual+Games", "title": "Casual & Hyper-Casual", "description": "Simple, addictive games with short sessions designed to achieve top app store rankings and viral growth." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Strategy+Games", "title": "Strategy & Simulation", "description": "Complex strategy games with deep mechanics, resource management, and long-term progression systems." },
+        { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=RPG+Games", "title": "RPG & Adventure", "description": "Story-driven RPG and adventure titles with character progression, quest systems, and immersive worlds." }
+      ]
+    },
+    {
+      "title": "Specialized",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Serious+Games", "title": "Serious & Training Games", "description": "Corporate training simulations, safety drills, and professional skill-building through gamification." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Kids+Games", "title": "Kids & Family Games", "description": "Safe, fun, and educational games designed for younger audiences with age-appropriate content and controls." },
+        { "id": 3, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Sports+Games", "title": "Sports & Racing Games", "description": "Fast-paced sports simulations and racing games with realistic physics, multiplayer modes, and tournaments." }
+      ]
+    },
+    {
+      "title": "Technology",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/0d0d1f/9b30d9?text=Unity+Games", "title": "Unity Game Development", "description": "Cross-platform games built in Unity — the industry-leading engine for 2D, 3D, AR, and VR experiences." },
+        { "id": 2, "image": "https://placehold.co/350x200/1a0a2e/7b44d6?text=Unreal+Engine", "title": "Unreal Engine Games", "description": "High-fidelity AAA-quality games built with Unreal Engine's advanced rendering and physics capabilities." },
+        { "id": 3, "image": "https://placehold.co/350x200/010427/6b00d7?text=HTML5+Games", "title": "HTML5 & WebGL Games", "description": "Lightweight browser games with no installation required, perfect for web portals and marketing campaigns." }
+      ]
+    }
+  ],
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about our game development services.",
+    "FAQcard": [
+      { "title": "How much does it cost to develop a game?", "description": "A hyper-casual mobile game starts from $5,000–$15,000. Mid-range mobile games range from $20,000–$80,000. Complex multiplayer or PC games can be $100,000+. We provide detailed estimates based on your specific concept." },
+      { "title": "Which game engines do you work with?", "description": "We primarily work with Unity (for cross-platform mobile, PC, AR/VR) and Unreal Engine (for high-fidelity desktop/console games). We also develop HTML5/WebGL games with Phaser and PixiJS." },
+      { "title": "How long does game development take?", "description": "Hyper-casual games take 4–8 weeks. Mid-range mobile games take 3–6 months. Complex multiplayer or PC/console games typically take 6–18 months depending on scope." },
+      { "title": "Do you handle app store submission?", "description": "Yes. We manage the full App Store and Google Play submission process including store listing optimization, screenshots, descriptions, and compliance with platform guidelines." },
+      { "title": "Can you add monetization to my game?", "description": "Absolutely. We implement in-app purchases, ads (AdMob, Unity Ads), subscription models, and battle pass systems designed to maximize revenue without compromising the player experience." }
+    ]
+  }
+}

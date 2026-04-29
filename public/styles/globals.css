@@ -268,66 +268,204 @@ body{
   animation-name: fadeInUp;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-220px * 7));
-  }
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
-@keyframes scrollrev {
-  0% {
-    transform: translateX(calc(-220px * 7));
-  }
-  100% {
-    transform: translateX(0);
-  }
+@keyframes scroll-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
+
 .slider {
-  /* background: white; */
-  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
-  height: 100px;
-  margin: auto;
   overflow: hidden;
-  position: relative;
   width: 100%;
+  padding: 1.5rem 0;
+  position: relative;
 }
+
 .slider::before,
 .slider::after {
-  /* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
-  background-color: transparent;
   content: "";
-  /* height: 100px; */
   position: absolute;
-  /* width: 200px; */
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
   top: 0;
-  transform: rotateZ(180deg);
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
 }
+
 .slider::before {
   left: 0;
-  top: 0;
+  background: linear-gradient(to right, #fff, transparent);
 }
+
+.slider::after {
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
+}
+
 .slider .slide-track {
-  -webkit-animation: scroll 30s linear infinite;
-  animation: scroll 30s linear infinite;
   display: flex;
-  width: calc(220px * 14);
+  gap: 1.25rem;
+  width: max-content;
+  align-items: center;
+  -webkit-animation: scroll-left 30s linear infinite;
+  animation: scroll-left 30s linear infinite;
 }
 
 .slider .slide-track-rev {
-  -webkit-animation: scrollrev 30s linear infinite;
-  animation: scrollrev 30s linear infinite;
   display: flex;
-  width: calc(220px * 14);
+  gap: 1.25rem;
+  width: max-content;
+  align-items: center;
+  -webkit-animation: scroll-right 32s linear infinite;
+  animation: scroll-right 32s linear infinite;
+}
+
+.slide-track:hover,
+.slide-track-rev:hover {
+  animation-play-state: paused;
+}
+
+.tech-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  background: #fff;
+  border: 1.5px solid #f0eaff;
+  box-shadow: 0 2px 10px rgba(107, 0, 215, 0.08);
+  min-width: 100px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(107, 0, 215, 0.16);
+}
+
+.tech-tile img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.tech-tile span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.tech-tile--white-bg img {
+  background: #f8fafc;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ── Hero Visual ── */
+.hero-visual {
+  position: relative;
+  width: 500px;
+  flex-shrink: 0;
+}
+
+.visual-shell {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(107, 0, 215, 0.2);
+}
+
+.visual-shell img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.floating-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1.5px solid #f0eaff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 210px;
+  z-index: 10;
+}
+
+.floating-card strong {
+  display: block;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+/* Insight card — top-right, overlaps the image edge */
+.insight-card {
+  top: 20px;
+  right: -20px;
+}
+
+.insight-card strong {
+  font-size: 13px;
+}
+
+.insight-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.insight-card ul li {
+  font-size: 12px;
+  color: #555;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.insight-card ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #6b00d7;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+/* Metric card — bottom-left, overlaps the image edge */
+.metric-card {
+  bottom: 20px;
+  left: -20px;
+}
+
+.metric-card strong {
+  font-size: 20px;
+  color: #6b00d7;
+  margin-bottom: 4px;
+}
+
+.metric-card p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
   margin: 0;
 }

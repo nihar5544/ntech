@@ -1,4 +1,5 @@
-import ApiService from "@/Services/ApiService";
+import fs from "fs";
+import path from "path";
 import FAQ from "@/components/common-section/FAQ";
 import Getintouch from "@/components/forms/GetInTouch";
 import TrustUs from "@/components/pageComponents/aboutpage/TrustUs";
@@ -10,7 +11,6 @@ import UseCases from "@/components/pageComponents/servicepages/UseCases";
 import React from "react";
 
 function Post({ servicesData, testimonialsData }) {
-  console.log("servicesData", servicesData);
   return (
     <main className="">
       <Banner servicesData={servicesData?.banner} />
@@ -21,7 +21,7 @@ function Post({ servicesData, testimonialsData }) {
         <ProjectInfo servicesData={servicesData?.automateTasks} />
       </section>
       <section>
-        <TrustUs data={servicesData?.ClientsTrustUs}/>
+        <TrustUs data={servicesData?.ClientsTrustUs} />
       </section>
       <section>
         <UseCases data={servicesData?.moreUseCases} />
@@ -31,29 +31,37 @@ function Post({ servicesData, testimonialsData }) {
       </section>
       <section className="flex items-start justify-center mb-10">
         <Testimonials
-           testimonial={testimonialsData?.testimonial}
+          testimonial={testimonialsData?.testimonial}
           heading={"Testimonials"}
         />
       </section>
       <section className="">
-        <Getintouch/>
+        <Getintouch />
       </section>
     </main>
   );
 }
 
 export default Post;
-export async function getServerSideProps(context) {
+
+export async function getStaticPaths() {
+  const dataDir = path.join(process.cwd(), "data", "services");
+  const files = fs.readdirSync(dataDir).filter((f) => f.endsWith(".json"));
+  const paths = files.map((file) => ({
+    params: { slug: file.replace(".json", "") },
+  }));
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps(context) {
   const { slug } = context.params;
   try {
-    const response = await ApiService.get(`api/services/${slug}`);
-    console.log("response", response);
-    const testimonials = await ApiService.get("api/testimonials/testimonial");
-    const testimonialsData = testimonials.data.data.attributes;
-    // Transform keys to camelCase
-    const servicesData = transformKeysToCamelCase(
-      response.data.data.attributes
-    );
+    const filePath = path.join(process.cwd(), "data", "services", `${slug}.json`);
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    const servicesData = JSON.parse(fileContents);
+
+    const testimonialsPath = path.join(process.cwd(), "data", "shared", "testimonials.json");
+    const testimonialsData = JSON.parse(fs.readFileSync(testimonialsPath, "utf8"));
 
     return {
       props: {
@@ -62,31 +70,7 @@ export async function getServerSideProps(context) {
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error);
-
-    return {
-      props: {
-        servicesData: null, // or some default value
-        testimonialsData:null,
-      },
-    };
+    console.error("Error loading service data:", error);
+    return { notFound: true };
   }
-}
-
-// Utility function to transform keys to camelCase
-function transformKeysToCamelCase(obj) {
-  if (obj === null || typeof obj !== "object") {
-    return obj;
-  }
-
-  if (Array.isArray(obj)) {
-    return obj.map(transformKeysToCamelCase);
-  }
-
-  return Object.fromEntries(
-    Object.entries(obj).map(([key, value]) => [
-      key.replace(/-([a-z])/g, (match) => match[1].toUpperCase()),
-      transformKeysToCamelCase(value),
-    ])
-  );
 }

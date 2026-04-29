@@ -1,0 +1,87 @@
+{
+  "Banner": {
+    "title": "WHO WE ARE",
+    "subtitle": "Building Digital Solutions That Move Businesses Forward",
+    "image": "https://placehold.co/600x450/010427/6b00d7?text=About+ntech"
+  },
+  "Insights": {
+    "image": "https://ui-avatars.com/api/?name=John+Doe&size=300&background=1a1a2e&color=9b30d9&bold=true",
+    "title": "Insights from Our CEO",
+    "name": "John Doe",
+    "position": "Chief Executive Officer, ntech",
+    "discription": "At ntech, we believe every business deserves a powerful digital presence. Our mission is simple: help companies of all sizes build websites, applications, and brands that actually work — that attract customers, convert visitors, and grow revenues. With a passionate team of developers, designers, and digital strategists, we've been turning ideas into digital reality for clients across the globe."
+  },
+  "KeepsUsMotivated": {
+    "title": "What Keeps Us Going — THE NUMBERS",
+    "numbers": [
+      { "id": 1, "number": "200", "sign": "+", "title": "Projects Delivered" },
+      { "id": 2, "number": "50", "sign": "+", "title": "Expert Team Members" },
+      { "id": 3, "number": "30", "sign": "+", "title": "Countries Served" },
+      { "id": 4, "number": "98", "sign": "%", "title": "Client Satisfaction" }
+    ]
+  },
+  "alliancesAndPatners": {
+    "title": "Our Technologies & Trusted Partners",
+    "description": "We partner with world-class technology providers to deliver cutting-edge digital solutions.",
+    "images": [
+      { "id": 1, "image": "/images/icons/devicons/react-original.svg" },
+      { "id": 2, "image": "/images/icons/devicons/nodejs-original.svg" },
+      { "id": 3, "image": "/images/icons/devicons/figma-original.svg" },
+      { "id": 4, "image": "/images/icons/devicons/unity-original.svg" },
+      { "id": 5, "image": "/images/icons/devicons/googlecloud-original.svg" }
+    ]
+  },
+  "ClientsTrustUs": {
+    "title": "Why Clients Trust Us",
+    "subtitle": "Our clients range from solo entrepreneurs to multi-national companies — all united by their trust in ntech's expertise and results.",
+    "list": [
+      { "id": 1, "image": "https://placehold.co/150x60/1a1a2e/9b30d9?text=ShopEasy", "title": "ShopEasy" },
+      { "id": 2, "image": "https://placehold.co/150x60/010427/7b44d6?text=CreativeHub", "title": "CreativeHub" },
+      { "id": 3, "image": "https://placehold.co/150x60/0d0d1f/6b00d7?text=GrowthCo", "title": "GrowthCo" },
+      { "id": 4, "image": "https://placehold.co/150x60/1a0a2e/9b30d9?text=ClinicNet", "title": "ClinicNet" },
+      { "id": 5, "image": "https://placehold.co/150x60/010427/7b44d6?text=GameForge", "title": "GameForge" },
+      { "id": 6, "image": "https://placehold.co/150x60/1a1a2e/6b00d7?text=RetailMax", "title": "RetailMax" }
+    ]
+  },
+  "ourVision": {
+    "image": "https://placehold.co/600x400/010427/6b00d7?text=Our+Vision+%26+Mission",
+    "ourVisionTitle": "Our Vision",
+    "visionDescription": "To be the most trusted digital solutions partner for businesses worldwide — enabling companies of every size to build a powerful online presence, automate their operations, and compete in the digital economy.",
+    "ourMissionTitle": "Our Mission",
+    "ourMissionDescription": "We empower businesses with world-class web development, design, SEO, and IT support services. Every project we undertake is driven by our commitment to quality, transparency, and delivering results that genuinely move the needle for our clients."
+  },
+  "LeadershipTeam": {
+    "title": "Meet Our Leadership Team",
+    "description": "Passionate leaders with deep expertise in web technology, design, digital marketing, and IT services.",
+    "LeadershipCard": [
+      {
+        "id": 1,
+        "image": "https://ui-avatars.com/api/?name=John+Doe&size=300&background=1a1a2e&color=9b30d9&bold=true",
+        "title": "John Doe",
+        "position": "Chief Executive Officer",
+        "description": "10+ years building digital products for startups and enterprises. John leads ntech's vision and growth strategy."
+      },
+      {
+        "id": 2,
+        "image": "https://ui-avatars.com/api/?name=Sarah+Chen&size=300&background=010427&color=7b44d6&bold=true",
+        "title": "Sarah Chen",
+        "position": "Chief Technology Officer",
+        "description": "Full-stack architect with expertise in React, Node.js, and cloud infrastructure. Sarah leads all engineering teams."
+      },
+      {
+        "id": 3,
+        "image": "https://ui-avatars.com/api/?name=Mike+Williams&size=300&background=0d0d1f&color=9b30d9&bold=true",
+        "title": "Mike Williams",
+        "position": "Head of Design",
+        "description": "Award-winning designer with 8+ years of UI/UX and brand identity experience across 150+ projects."
+      },
+      {
+        "id": 4,
+        "image": "https://ui-avatars.com/api/?name=Priya+Sharma&size=300&background=1a0a2e&color=6b00d7&bold=true",
+        "title": "Priya Sharma",
+        "position": "Head of SEO & Digital Marketing",
+        "description": "SEO expert who has helped 100+ businesses achieve first-page rankings and multiply their organic traffic."
+      }
+    ]
+  }
+}

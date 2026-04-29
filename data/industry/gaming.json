@@ -1,0 +1,37 @@
+{
+  "banner": {
+    "title": "Digital Solutions for the Gaming Industry",
+    "description": "We develop engaging games, gaming websites, player communities, and gaming IT infrastructure that deliver unforgettable experiences for players and sustainable business models for publishers.",
+    "button": { "title": "Build Your Gaming Project", "link": "/contact-us" },
+    "bgImage": "/images/_herobg.webp"
+  },
+  "services": {
+    "title": "Gaming Solutions We Build",
+    "description": "Full-stack gaming development — from the game itself to the brand, website, and community platform.",
+    "card": [
+      { "id": 1, "icon": "/images/icons/devicons/unity-original.svg", "title": "Mobile Game Development", "description": "iOS and Android games built in Unity — from hyper-casual titles to story-driven RPGs with deep progression systems." },
+      { "id": 2, "icon": "/images/icons/devicons/html5-original.svg", "title": "Web-Based Games", "description": "HTML5 games playable in any browser — great for marketing campaigns, portals, and educational platforms." },
+      { "id": 3, "icon": "/images/icons/devicons/react-original.svg", "title": "Gaming Websites & Portals", "description": "Community portals, game landing pages, news sites, and studio websites built for the gaming audience." },
+      { "id": 4, "icon": "/images/icons/devicons/figma-original.svg", "title": "Game UI/UX & Art Direction", "description": "Game interface design, concept art direction, and marketing visuals that capture your game's visual identity." },
+      { "id": 5, "icon": "/images/icons/devicons/nodejs-original.svg", "title": "Multiplayer & Backend", "description": "Scalable real-time multiplayer backends with matchmaking, leaderboards, player data, and live ops infrastructure." },
+      { "id": 6, "icon": "/images/icons/devicons/linux-original.svg", "title": "Gaming Server Management", "description": "Dedicated game server hosting, deployment pipelines, DDoS protection, and player data management." }
+    ]
+  },
+  "moreUseCases": {
+    "title": "Gaming Use Cases",
+    "cards": [
+      { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Casual+Mobile+Game", "title": "Casual Mobile Games", "description": "Addictive hyper-casual and casual games optimized for app store ranking, virality, and ad monetization." },
+      { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Game+Community", "title": "Gaming Community Platforms", "description": "Forums, wikis, leaderboards, and social features that build loyal communities around your game." },
+      { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Esports+Platform", "title": "Esports & Tournament Platforms", "description": "Tournament bracket systems, live scoring, team management, and streaming integration for competitive gaming." }
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Game Developers & Studios Choose ntech",
+    "description": "We're gamers who build games. Our team brings technical excellence and genuine passion to every gaming project.",
+    "card": {
+      "description": "Our gaming solutions are built for performance, scalability, and player engagement — from smooth 60fps gameplay to rock-solid backend infrastructure.",
+      "subDesciption": "We cover the full spectrum from game development and design to community platforms, marketing sites, and IT management.",
+      "image": "https://placehold.co/400x300/0f172a/a855f7?text=Gaming+Solutions"
+    }
+  }
+}

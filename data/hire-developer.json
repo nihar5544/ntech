@@ -1,0 +1,115 @@
+{
+  "banner": {
+    "title": "Hire Expert Developers & Designers",
+    "description": "Access a world-class team of web developers, UI/UX designers, game developers, SEO specialists, and IT engineers ready to bring your project to life — on time and within budget.",
+    "button": {
+      "title": "Hire a Developer Now",
+      "link": "/contact-us"
+    },
+    "bgImage": "/images/_herobg.webp"
+  },
+  "ExtraordinaryTitle": "What Makes Our Team Extraordinary",
+  "ExtraordinaryCard": [
+    {
+      "id": 1,
+      "heading": "Web Development Skills",
+      "list": [
+        { "id": 1, "title": "React & Next.js Development" },
+        { "id": 2, "title": "Node.js & Backend APIs" },
+        { "id": 3, "title": "WordPress & CMS Platforms" },
+        { "id": 4, "title": "Ecommerce (Shopify, WooCommerce)" },
+        { "id": 5, "title": "Mobile-First Responsive Design" }
+      ]
+    },
+    {
+      "id": 2,
+      "heading": "Design & Game Skills",
+      "list": [
+        { "id": 1, "title": "UI/UX Design (Figma, Adobe XD)" },
+        { "id": 2, "title": "Logo & Brand Identity" },
+        { "id": 3, "title": "Unity Game Development" },
+        { "id": 4, "title": "Illustration & Motion Graphics" },
+        { "id": 5, "title": "Social Media & Print Design" }
+      ]
+    },
+    {
+      "id": 3,
+      "heading": "SEO & IT Skills",
+      "list": [
+        { "id": 1, "title": "On-Page & Technical SEO" },
+        { "id": 2, "title": "Link Building & Content Strategy" },
+        { "id": 3, "title": "Server & Cloud Management" },
+        { "id": 4, "title": "Cybersecurity & Backup Solutions" },
+        { "id": 5, "title": "IT Helpdesk & User Support" }
+      ]
+    }
+  ],
+  "services": {
+    "title": "Our Hiring Models",
+    "description": "Choose the engagement model that best suits your project timeline, budget, and team structure.",
+    "card": [
+      { "id": 1, "icon": "/images/icons/devicons/react-original.svg", "title": "Dedicated Team", "description": "Hire a full dedicated team that works exclusively on your project with daily standups and complete workflow integration." },
+      { "id": 2, "icon": "/images/icons/devicons/nodejs-original.svg", "title": "Staff Augmentation", "description": "Extend your in-house team with expert developers or designers who seamlessly integrate with your existing processes." },
+      { "id": 3, "icon": "/images/icons/devicons/figma-original.svg", "title": "Fixed Price Model", "description": "Get your project built at a fixed cost with clearly defined deliverables, timelines, and milestone-based payments." },
+      { "id": 4, "icon": "/images/icons/devicons/chrome-original.svg", "title": "Hourly Engagement", "description": "Flexible hourly billing for ongoing development, design work, SEO consulting, or code reviews." },
+      { "id": 5, "icon": "/images/icons/devicons/unity-original.svg", "title": "Project-Based", "description": "End-to-end project delivery with a dedicated project manager, clear milestones, and quality assurance." },
+      { "id": 6, "icon": "/images/icons/devicons/linux-original.svg", "title": "Maintenance & Support", "description": "Ongoing maintenance, monitoring, and upgrade services for your websites, applications, and IT infrastructure." }
+    ]
+  },
+  "techStackTitle": "Technologies Our Team Masters",
+  "techStackCards": [
+    {
+      "id": 1,
+      "title": "Frontend Frameworks",
+      "image": [
+        { "id": 1, "image": "/images/icons/devicons/react-original.svg" },
+        { "id": 2, "image": "/images/icons/devicons/nextjs-original.svg" },
+        { "id": 3, "image": "/images/icons/devicons/vuejs-original.svg" },
+        { "id": 4, "image": "/images/icons/devicons/angularjs-original.svg" },
+        { "id": 5, "image": "/images/icons/devicons/flutter-original.svg" },
+        { "id": 6, "image": "/images/icons/devicons/typescript-original.svg" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Backend & Languages",
+      "image": [
+        { "id": 1, "image": "/images/icons/devicons/nodejs-original.svg" },
+        { "id": 2, "image": "/images/icons/devicons/python-original.svg" },
+        { "id": 3, "image": "/images/icons/devicons/php-original.svg" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Design & Game Dev",
+      "image": [
+        { "id": 1, "image": "/images/icons/devicons/figma-original.svg" },
+        { "id": 2, "image": "/images/icons/devicons/unity-original.svg" },
+        { "id": 3, "image": "/images/icons/devicons/photoshop-plain.svg" },
+        { "id": 4, "image": "/images/icons/devicons/wordpress-plain.svg" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Cloud & DevOps",
+      "image": [
+        { "id": 1, "image": "/images/icons/devicons/amazonwebservices-plain-wordmark.svg" },
+        { "id": 2, "image": "/images/icons/devicons/docker-original.svg" },
+        { "id": 3, "image": "/images/icons/devicons/git-original.svg" },
+        { "id": 4, "image": "/images/icons/devicons/github-original.svg" }
+      ]
+    }
+  ],
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about hiring developers and designers through ntech.",
+    "FAQcard": [
+      { "title": "How quickly can your team start on my project?", "description": "Our team can typically begin within 48–72 hours of finalizing the agreement. We maintain a pool of pre-vetted developers and designers ready to start immediately." },
+      { "title": "What technologies does your team specialize in?", "description": "Our team covers React, Next.js, Node.js, Python, PHP, Unity game development, Figma design, WordPress, Shopify, and more. We match the right specialists to your project." },
+      { "title": "Do you handle both design and development?", "description": "Yes. We're a full-service digital agency with dedicated designers, developers, SEO specialists, and IT engineers working together to deliver complete solutions." },
+      { "title": "How do you ensure quality?", "description": "We follow rigorous code review processes, QA testing, and design feedback loops. All work goes through internal quality checks before delivery." },
+      { "title": "Can I hire for a short-term project?", "description": "Absolutely. We offer flexible engagements from a few hours of consulting to full-time dedicated teams. Scale up or down based on your project needs at any time." },
+      { "title": "What is the cost to hire a developer or designer?", "description": "Pricing varies based on skill level, specialization, and engagement model. Contact us for a detailed quote tailored to your specific requirements and timeline." }
+    ]
+  }
+}

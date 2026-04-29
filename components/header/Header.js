@@ -1,38 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import MobileHeader from "./MobileHeader";
 import ButtonMenu from "./ButtonMenu";
 import { Button } from "../ui/button";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
-import ApiService from "@/Services/ApiService";
-import Images from "../ui/image";
+
+import headerData from "@/data/header.json";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const router = useRouter();
-  const [headerData, setHeaderData] = useState();
   const [flyer, setFlyer] = useState(false);
   const [flyertwo, setFlyertwo] = useState(false);
-  useEffect(() => {
-    ApiService.get("api/headers")
-      .then((value) => {
-        setHeaderData(value?.data?.data[0]?.attributes);
-      })
-      .catch((err) => console.log(err));
-  }, []);
 
-  // console.log("header data", headerData);
   return (
-    <header className={`sticky top-0 z-50 bg-white ${headerData ? "" : "hidden"}`}>
+    <header className="sticky top-0 z-50 bg-white">
       <div className="flex items-center justify-between w-full  md:space-x-10 border-b-2 border-gray-100 header-padding">
-        <Link href={headerData?.home?.link ? headerData?.home?.link : '/'}>
-          <Images
-            Path={headerData?.logo}
-            width={200}
-            height={30}
-            className="p-2 min-h-[30px] min-w-[200px]"
-          />
+        <Link href={headerData?.home?.link ?? "/"}>
+          <Image src="/images/logo.png" alt="ntech" width={120} height={40} className="h-10 w-auto object-contain" />
         </Link>
         <div className="-mr-2 -my-2 lg:hidden">
           <button
@@ -60,13 +46,13 @@ function Header() {
         </div>
         <nav className="hidden lg:flex justify-between xl:space-x-10 lg:space-x-4 md:space-x-1">
           <Link
-            href={headerData?.home?.link ? headerData?.home?.link : "/"}
+            href={headerData?.home?.link ?? "/"}
             className={`text-base font-medium text-gray-500 hover:text-[#6b00d7] hover:underline underline-offset-8 ${router.pathname === headerData?.home?.link ? "text-[#6b00d7]" : ""}`}
           >
             {headerData?.home?.title}
           </Link>
           <Link
-            href={headerData?.about?.link ? headerData?.about?.link : "/"}
+            href={headerData?.about?.link ?? "/"}
             className={`text-base font-medium text-gray-500 hover:text-[#6b00d7] hover:underline underline-offset-8 ${router.pathname === headerData?.about?.link ? "text-[#6b00d7]" : ""}`}
           >
             {headerData?.about?.title}
@@ -77,44 +63,48 @@ function Header() {
             flyer={flyer}
             istitle={false}
             handleOpen={() => {
-              setFlyer(true), setFlyertwo(false);
+              setFlyer(true);
+              setFlyertwo(false);
             }}
             handleClose={() => {
-              setFlyer(false), setFlyertwo(false);
+              setFlyer(false);
+              setFlyertwo(false);
             }}
           />
           <ButtonMenu
-            title={headerData?.industryDropdown.title}
-            submenu={headerData?.industryDropdown.list}
+            title={headerData?.industryDropdown?.title}
+            submenu={headerData?.industryDropdown?.list}
             flyer={flyertwo}
             istitle={true}
             handleOpen={() => {
-              setFlyer(false), setFlyertwo(true);
+              setFlyer(false);
+              setFlyertwo(true);
             }}
             handleClose={() => {
-              setFlyer(false), setFlyertwo(false);
+              setFlyer(false);
+              setFlyertwo(false);
             }}
           />
           <Link
-            href={headerData?.hiredeveloper?.link ? headerData?.hiredeveloper?.link : "/"}
+            href={headerData?.hiredeveloper?.link ?? "/"}
             className={`text-base font-medium text-gray-500 hover:text-[#6b00d7] hover:underline underline-offset-8 ${router.pathname === headerData?.hiredeveloper?.link ? "text-[#6b00d7]" : ""}`}
           >
             {headerData?.hiredeveloper?.title}
           </Link>
           <Link
-            href={headerData?.clients?.link ? headerData?.clients?.link : '/'}
+            href={headerData?.clients?.link ?? "/"}
             className={`text-base font-medium text-gray-500 hover:text-[#6b00d7] hover:underline underline-offset-8 ${router.pathname === headerData?.clients?.link ? "text-[#6b00d7]" : ""}`}
           >
             {headerData?.clients?.title}
           </Link>
           <Link
-            href={headerData?.media?.link ? headerData?.media?.link : '/'}
+            href={headerData?.media?.link ?? "/"}
             className={`text-base font-medium text-gray-500 hover:text-[#6b00d7] hover:underline underline-offset-8 ${router.pathname === headerData?.media?.link ? "text-[#6b00d7]" : ""}`}
           >
             {headerData?.media?.title}
           </Link>
         </nav>
-        <div className="hidden lg:flex items-center justify-end  lg:w-fit">
+        <div className="hidden lg:flex items-center justify-end lg:w-fit">
           <Button
             onClick={() => router.push(headerData?.Button?.link)}
             size="lg"

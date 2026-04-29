@@ -1,4 +1,5 @@
-import ApiService from "@/Services/ApiService";
+import fs from "fs";
+import path from "path";
 import Getintouch from "@/components/forms/GetInTouch";
 import BlockchainBanner from "@/components/pageComponents/advancedBlockchain/BlockchainBanner";
 import BlockchainBenifits from "@/components/pageComponents/advancedBlockchain/BlockchainBenifits";
@@ -9,13 +10,10 @@ import DevelopmentSolution from "@/components/pageComponents/advancedBlockchain/
 import Numbers from "@/components/pageComponents/advancedBlockchain/Numbers";
 import Patners from "@/components/pageComponents/homepage/Patners";
 import Testimonials from "@/components/pageComponents/homepage/Testimonials";
-import WhyChoose from "@/components/pageComponents/industrypage/WhyChoose";
-
 import React from "react";
-import FAQ from './../../components/common-section/FAQ';
+import FAQ from "@/components/common-section/FAQ";
 
 function Blockchain({ data, testimonialsData, patnersData }) {
-  console.log("data", data);
   return (
     <main>
       <section className="banner-padding-x">
@@ -65,19 +63,32 @@ function Blockchain({ data, testimonialsData, patnersData }) {
 
 export default Blockchain;
 
-export async function getServerSideProps(context) {
+export async function getStaticPaths() {
+  const dataDir = path.join(process.cwd(), "data", "advanced-blockchain-development");
+  const files = fs.readdirSync(dataDir).filter((f) => f.endsWith(".json"));
+  const paths = files.map((file) => ({
+    params: { slug: file.replace(".json", "") },
+  }));
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps(context) {
   const { slug } = context.params;
   try {
-    const response = await ApiService.get(
-      `api/blockchain-developments/${slug}`
+    const filePath = path.join(
+      process.cwd(),
+      "data",
+      "advanced-blockchain-development",
+      `${slug}.json`
     );
-    console.log("response", response);
-    const testimonials = await ApiService.get("api/testimonials/testimonial");
-    const testimonialsData = testimonials.data.data.attributes;
-    const patners = await ApiService.get("api/patners/patner");
-    const patnersData = patners.data.data.attributes;
-    // Transform keys to camelCase
-    const data = transformKeysToCamelCase(response.data.data.attributes);
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    const data = JSON.parse(fileContents);
+
+    const testimonialsPath = path.join(process.cwd(), "data", "shared", "testimonials.json");
+    const testimonialsData = JSON.parse(fs.readFileSync(testimonialsPath, "utf8"));
+
+    const partnersPath = path.join(process.cwd(), "data", "shared", "partners.json");
+    const patnersData = JSON.parse(fs.readFileSync(partnersPath, "utf8"));
 
     return {
       props: {
@@ -87,32 +98,7 @@ export async function getServerSideProps(context) {
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error);
-
-    return {
-      props: {
-        data: null, // or some default value
-        testimonialsData: null,
-        patnersData: null,
-      },
-    };
+    console.error("Error loading blockchain data:", error);
+    return { notFound: true };
   }
-}
-
-// Utility function to transform keys to camelCase
-function transformKeysToCamelCase(obj) {
-  if (obj === null || typeof obj !== "object") {
-    return obj;
-  }
-
-  if (Array.isArray(obj)) {
-    return obj.map(transformKeysToCamelCase);
-  }
-
-  return Object.fromEntries(
-    Object.entries(obj).map(([key, value]) => [
-      key.replace(/-([a-z])/g, (match) => match[1].toUpperCase()),
-      transformKeysToCamelCase(value),
-    ])
-  );
 }
