@@ -1,0 +1,204 @@
+{
+  "Banner": {
+    "title": "Build Digital Solutions That Drive Real Growth",
+    "description": "We deliver professional web development, web applications, game development, graphic design, SEO, and IT support services that help businesses thrive in the digital world.",
+    "Button": {
+      "title": "Start Your Project",
+      "link": "/contact-us"
+    },
+    "image": "/images/hero-visual.jpg"
+  },
+  "headings": {
+    "SERVICES": "Our Services",
+    "EXPERTISE": "Our Expertise",
+    "Projects": "Our Plans",
+    "INDUSTRIES": "Industries We Serve",
+    "Testimonials": "What Our Clients Say",
+    "TechStack": "Our Technology Stack"
+  },
+  "Services": {
+    "title": "Comprehensive IT & Digital Solutions",
+    "description": "We offer a full range of digital services to help your business grow, stand out, and succeed online.",
+    "card": [
+      { "id": 1, "title": "Web Page Development", "description": "Professional websites that make lasting impressions and drive real conversions.", "icon": "/images/icons/devicons/html5-original.svg" },
+      { "id": 2, "title": "Web Application", "description": "Powerful web apps — ecommerce, CMS, sales tools, and custom business platforms.", "icon": "/images/icons/devicons/react-original.svg" },
+      { "id": 3, "title": "Game Development", "description": "Engaging games for mobile, web, and desktop built with Unity and Unreal Engine.", "icon": "/images/icons/devicons/unity-original.svg" },
+      { "id": 4, "title": "Graphic Designing", "description": "Creative logos, banners, posters, and complete brand identity design.", "icon": "/images/icons/devicons/figma-original.svg" },
+      { "id": 5, "title": "SEO Services", "description": "Boost search rankings, drive organic traffic, and grow your online visibility.", "icon": "/images/icons/devicons/chrome-original.svg" },
+      { "id": 6, "title": "IT Service & Support", "description": "Reliable IT management, website maintenance, and expert technical support.", "icon": "/images/icons/devicons/linux-original.svg" }
+    ]
+  },
+  "ourProject": {
+    "title": "Our Service Plans",
+    "subtitle": "Flexible Solutions for Every Stage",
+    "description": "From startups to enterprises, we have the right plan to accelerate your digital journey and deliver results that matter."
+  },
+  "ourProjectList": [
+    {
+      "title": "Enterprise Plan",
+      "list": [
+        { "id": 1, "title": "Full-Stack Web or App Development" },
+        { "id": 2, "title": "Dedicated Development Team" },
+        { "id": 3, "title": "Custom UI/UX Design Included" },
+        { "id": 4, "title": "24/7 Priority Support" }
+      ]
+    },
+    {
+      "title": "Growth Plan",
+      "list": [
+        { "id": 1, "title": "Custom Website or Web App" },
+        { "id": 2, "title": "SEO Setup & Optimization" },
+        { "id": 3, "title": "Graphic & Brand Design" },
+        { "id": 4, "title": "Business Hours Support" }
+      ]
+    },
+    {
+      "title": "Startup Plan",
+      "list": [
+        { "id": 1, "title": "Professional Landing Page" },
+        { "id": 2, "title": "Basic Logo & Brand Kit" },
+        { "id": 3, "title": "On-Page SEO Setup" },
+        { "id": 4, "title": "Email Support" }
+      ]
+    },
+    {
+      "title": "Consultation",
+      "list": [
+        { "id": 1, "title": "Technical Architecture Review" },
+        { "id": 2, "title": "Digital Strategy Session" },
+        { "id": 3, "title": "SEO & Marketing Audit" },
+        { "id": 4, "title": "IT Infrastructure Roadmap" }
+      ]
+    }
+  ],
+  "OurExpertiseCard": [
+    {
+      "icon": "/images/icons/devicons/react-original.svg",
+      "title": "Web Development",
+      "list": [
+        { "id": 1, "title": "Single & Multi-Page Websites" },
+        { "id": 2, "title": "React & Next.js Applications" },
+        { "id": 3, "title": "WordPress & CMS Platforms" },
+        { "id": 4, "title": "Ecommerce Solutions" }
+      ]
+    },
+    {
+      "icon": "/images/icons/devicons/figma-original.svg",
+      "title": "Design & Branding",
+      "list": [
+        { "id": 1, "title": "Logo & Identity Design" },
+        { "id": 2, "title": "UI/UX Design" },
+        { "id": 3, "title": "Social Media Graphics" },
+        { "id": 4, "title": "Print & Digital Media" }
+      ]
+    },
+    {
+      "icon": "/images/icons/devicons/chrome-original.svg",
+      "title": "SEO & IT Support",
+      "list": [
+        { "id": 1, "title": "On-Page & Technical SEO" },
+        { "id": 2, "title": "Link Building" },
+        { "id": 3, "title": "Website Maintenance" },
+        { "id": 4, "title": "IT Helpdesk & Consulting" }
+      ]
+    }
+  ],
+  "ourExpertise": {
+    "title": "Our Expertise",
+    "description": "We specialize in building digital products and services that drive measurable results for businesses of all sizes."
+  },
+  "projectIdea": {
+    "image": "/images/extraBg.png",
+    "title": "Ready to Build Your Digital Presence?",
+    "description": "Let's turn your ideas into production-ready digital products. Our expert team is standing by to help you design, build, and launch the perfect solution for your business.",
+    "Button": {
+      "title": "Start Your Project",
+      "link": "/contact-us",
+      "icon": ""
+    }
+  },
+  "AiandBlockchainServices": {
+    "title": "Digital Solutions That Transform Businesses",
+    "description": "From beautiful websites and powerful web apps to creative design and SEO strategies — we deliver digital services that drive growth, improve efficiency, and create lasting competitive advantage."
+  },
+  "AiandBlockchainCard": {
+    "title": "Industries We Serve",
+    "description": "We have deep experience delivering digital solutions across a wide range of industries.",
+    "list": [
+      { "id": 1, "image": "/images/industries/ecommerce.jpg", "alt": "E-Commerce – digital shopping and retail technology", "title": "E-Commerce", "tag": "Shops & Marketplaces" },
+      { "id": 2, "image": "/images/industries/healthcare.jpg", "alt": "Healthcare – medical professionals using digital health tools", "title": "Healthcare", "tag": "Portals & Telehealth" },
+      { "id": 3, "image": "/images/industries/education.jpg", "alt": "Education – e-learning technology and digital classrooms", "title": "Education", "tag": "LMS & E-Learning" },
+      { "id": 4, "image": "/images/industries/corporate.jpg", "alt": "Corporate – hybrid office meeting with large display screens", "title": "Corporate", "tag": "Dashboards & Tools" },
+      { "id": 5, "image": "/images/industries/gaming.jpg", "alt": "Gaming – professional esports player at high-performance gaming desk", "title": "Gaming", "tag": "Web Games & Apps" },
+      { "id": 6, "image": "/images/industries/real-estate.jpg", "alt": "Real Estate – tablet showing 3D house model with property technology", "title": "Real Estate", "tag": "PropTech & Listings" }
+    ]
+  },
+  "alliancesAndPartners": {
+    "title": "Technologies & Tools We Master",
+    "description": "We work with the world's best technologies and platforms to deliver exceptional digital solutions.",
+    "images": [
+      { "id": 1, "image": "/images/icons/devicons/react-original.svg" },
+      { "id": 2, "image": "/images/icons/devicons/nextjs-original.svg" },
+      { "id": 3, "image": "/images/icons/devicons/nodejs-original.svg" },
+      { "id": 4, "image": "/images/icons/devicons/figma-original.svg" },
+      { "id": 5, "image": "/images/icons/devicons/unity-original.svg" }
+    ]
+  },
+  "sampleClientWork": {
+    "image": "https://placehold.co/600x350/010427/9b30d9?text=Client+Work+Portfolio",
+    "title": "Transforming Ideas into Digital Reality",
+    "description": "Explore our portfolio of successful digital projects — from high-converting websites and ecommerce platforms to mobile games and award-winning brand identities.",
+    "Button": {
+      "title": "View Our Portfolio"
+    }
+  },
+  "techStackArray": [
+    {
+      "title": "LANGUAGES",
+      "image": [
+        { "id": 1, "image": "/images/icons/devicons/javascript-original.svg" },
+        { "id": 2, "image": "/images/icons/devicons/typescript-original.svg" },
+        { "id": 3, "image": "/images/icons/devicons/python-original.svg" },
+        { "id": 4, "image": "/images/icons/devicons/php-original.svg" },
+        { "id": 5, "image": "/images/icons/devicons/csharp-original.svg" }
+      ]
+    },
+    {
+      "title": "FRAMEWORKS",
+      "image": [
+        { "id": 1, "image": "/images/icons/devicons/react-original.svg" },
+        { "id": 2, "image": "/images/icons/devicons/nextjs-original.svg" },
+        { "id": 3, "image": "/images/icons/devicons/nodejs-original.svg" },
+        { "id": 4, "image": "/images/icons/devicons/vuejs-original.svg" },
+        { "id": 5, "image": "/images/icons/devicons/flutter-original.svg" }
+      ]
+    },
+    {
+      "title": "DESIGN",
+      "image": [
+        { "id": 1, "image": "/images/icons/devicons/figma-original.svg" },
+        { "id": 2, "image": "/images/icons/devicons/photoshop-plain.svg" },
+        { "id": 3, "image": "/images/icons/devicons/wordpress-plain.svg" },
+        { "id": 4, "image": "/images/icons/devicons/unity-original.svg" }
+      ]
+    },
+    {
+      "title": "CLOUD & TOOLS",
+      "image": [
+        { "id": 1, "image": "/images/icons/devicons/amazonwebservices-plain-wordmark.svg" },
+        { "id": 2, "image": "/images/icons/devicons/googlecloud-original.svg" },
+        { "id": 3, "image": "/images/icons/devicons/docker-original.svg" },
+        { "id": 4, "image": "/images/icons/devicons/git-original.svg" }
+      ]
+    },
+    {
+      "title": "DATABASES",
+      "image": [
+        { "id": 1, "image": "/images/icons/devicons/mongodb-original.svg" },
+        { "id": 2, "image": "/images/icons/devicons/postgresql-original.svg" },
+        { "id": 3, "image": "/images/icons/devicons/mysql-original.svg" },
+        { "id": 4, "image": "/images/icons/devicons/redis-original.svg" }
+      ]
+    }
+  ]
+}

@@ -3,9 +3,10 @@ import "../public/styles/globals.css";
 import Head from "next/head";
 import Footer from "@/components/footer/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "next-themes";
 
-export default function App({ Component, pageProps }) {
-  let schema = {
+function DefaultLayout({ children }) {
+  const schema = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     name: "ntech",
@@ -21,18 +22,12 @@ export default function App({ Component, pageProps }) {
     <main className="min-h-screen flex flex-col justify-between max-w-[2000px] mx-auto">
       <Head>
         <title>ntech — Your Trusted Digital Solutions Partner</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        ></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
           content="ntech delivers professional web development, web applications, game development, graphic design, SEO, and IT support services for businesses worldwide."
         />
-        <meta
-          property="og:title"
-          content="ntech — Your Trusted Digital Solutions Partner"
-        />
+        <meta property="og:title" content="ntech — Your Trusted Digital Solutions Partner" />
         <meta property="og:site_name" content="ntech.io" />
         <meta property="og:url" content="https://www.ntech.io/" />
         <meta
@@ -40,22 +35,25 @@ export default function App({ Component, pageProps }) {
           content="ntech delivers professional web development, web applications, game development, graphic design, SEO, and IT support services for businesses worldwide."
         />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://www.ntech.io/favicon.ico"
-        />
+        <meta property="og:image" content="https://www.ntech.io/favicon.ico" />
       </Head>
-
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-
       <Header />
-      <Component {...pageProps} />
+      {children}
       <Toaster />
-
       <Footer />
     </main>
+  );
+}
+
+export default function App({ Component, pageProps }) {
+  const getLayout = Component.getLayout ?? ((page) => <DefaultLayout>{page}</DefaultLayout>);
+  return (
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      {getLayout(<Component {...pageProps} />)}
+    </ThemeProvider>
   );
 }
