@@ -65,7 +65,12 @@ export default Blockchain;
 
 export async function getStaticPaths() {
   const dataDir = path.join(process.cwd(), "data", "advanced-blockchain-development");
-  const files = fs.readdirSync(dataDir).filter((f) => f.endsWith(".json"));
+  let files = [];
+  try {
+    files = fs.readdirSync(dataDir).filter((f) => f.endsWith(".json"));
+  } catch {
+    // directory missing or empty — no pages to generate
+  }
   const paths = files.map((file) => ({
     params: { slug: file.replace(".json", "") },
   }));
