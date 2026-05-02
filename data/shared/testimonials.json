@@ -1,0 +1,46 @@
+{
+  "testimonial": {
+    "card": [
+      {
+        "image": "https://placehold.co/350x300/1a1a2e/9b30d9?text=ShopEasy+Ecommerce",
+        "icon": "https://ui-avatars.com/api/?name=Alex+Thompson&size=100&background=6b00d7&color=ffffff&bold=true",
+        "name": "Alex Thompson",
+        "position": "CEO, ShopEasy",
+        "rating": 5,
+        "description": "ntech built our ecommerce platform from the ground up and the results have been incredible. Sales increased by 40% in the first three months after launch. Professional team, on-time delivery, and outstanding quality.",
+        "Button": "Read Case Study",
+        "buttonIcon": ""
+      },
+      {
+        "image": "https://placehold.co/350x300/010427/7b44d6?text=Creative+Agency",
+        "icon": "https://ui-avatars.com/api/?name=Sarah+Chen&size=100&background=1a1a2e&color=9b30d9&bold=true",
+        "name": "Sarah Chen",
+        "position": "Creative Director, DesignEdge",
+        "rating": 5,
+        "description": "The brand identity ntech designed for us is absolutely stunning. The logo, color system, and brand guidelines perfectly capture who we are. We get compliments on our branding every single day.",
+        "Button": "Read Case Study",
+        "buttonIcon": ""
+      },
+      {
+        "image": "https://placehold.co/350x300/0d0d1f/6b00d7?text=GameForge+Studio",
+        "icon": "https://ui-avatars.com/api/?name=Michael+Rodriguez&size=100&background=7b44d6&color=ffffff&bold=true",
+        "name": "Michael Rodriguez",
+        "position": "Founder, GameForge Studio",
+        "rating": 5,
+        "description": "ntech delivered our mobile game on schedule and it exceeded all our expectations. The gameplay is smooth, the graphics are beautiful, and players love it. We hit 50,000 downloads in the first month.",
+        "Button": "Read Case Study",
+        "buttonIcon": ""
+      },
+      {
+        "image": "https://placehold.co/350x300/1a0a2e/9b30d9?text=GrowthCo+Business",
+        "icon": "https://ui-avatars.com/api/?name=Emily+Watson&size=100&background=9b30d9&color=ffffff&bold=true",
+        "name": "Emily Watson",
+        "position": "Marketing Manager, GrowthCo",
+        "rating": 5,
+        "description": "Our organic traffic tripled within six months of working with ntech's SEO team. They're transparent, strategic, and genuinely care about results. Best digital investment we've made as a business.",
+        "Button": "Read Case Study",
+        "buttonIcon": ""
+      }
+    ]
+  }
+}

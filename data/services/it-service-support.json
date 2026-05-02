@@ -1,0 +1,78 @@
+{
+  "banner": {
+    "title": "Reliable IT Service & Support Solutions",
+    "description": "We provide comprehensive IT management, website maintenance, technical support, and consulting services that keep your business running smoothly, securely, and efficiently — 24/7.",
+    "schedualCallButton": { "title": "Schedule a Discovery Call" },
+    "projectCostButton": { "title": "Get Project Cost" },
+    "image": "https://placehold.co/550x500/010427/6b00d7?text=IT+Support"
+  },
+  "developmentServices": {
+    "title": "Our IT Service & Support Offerings",
+    "description": "End-to-end IT management and support services designed for businesses of every size.",
+    "subtitle": "Complete IT Support Solutions",
+    "cards": [
+      { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Website+Management", "title": "Website Management", "description": "Ongoing website management covering updates, security patches, backups, uptime monitoring, and content changes." },
+      { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=IT+Support", "title": "IT Helpdesk Support", "description": "Responsive helpdesk support for your team — resolving software, hardware, email, and connectivity issues quickly." },
+      { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Server+Management", "title": "Server & Cloud Management", "description": "Managing your cloud infrastructure, server configurations, performance monitoring, and cost optimization." },
+      { "id": 4, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Cybersecurity", "title": "Cybersecurity Services", "description": "Protecting your business with firewall configuration, vulnerability assessments, SSL management, and security monitoring." },
+      { "id": 5, "image": "https://placehold.co/350x200/010427/7b44d6?text=IT+Consulting", "title": "IT Consulting", "description": "Expert technology consulting to help you plan IT strategy, choose the right tools, and optimize your tech infrastructure." },
+      { "id": 6, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Backup+Recovery", "title": "Backup & Disaster Recovery", "description": "Automated backup solutions and disaster recovery planning to protect your data and minimize downtime." }
+    ]
+  },
+  "automateTasks": {
+    "title": "Focus on Your Business, Not Your IT Problems",
+    "description": "IT issues slow businesses down, cost money, and create security risks. Our managed IT services handle everything — from routine maintenance to emergency response — so your team can focus on what they do best without technical interruptions.",
+    "image": "/images/extraBg.png",
+    "sideImage": "https://placehold.co/300x300/010427/9b30d9?text=IT+Management",
+    "Button": { "title": "Get IT Support Today", "link": "/contact-us", "icon": "" }
+  },
+  "ClientsTrustUs": {
+    "title": "Businesses We Keep Running Smoothly",
+    "subtitle": "Small businesses, growing companies, and enterprises trust ntech as their IT partner for reliable, expert support.",
+    "list": [
+      { "id": 1, "image": "https://placehold.co/150x60/1a1a2e/9b30d9?text=OfficeWorks", "title": "OfficeWorks" },
+      { "id": 2, "image": "https://placehold.co/150x60/010427/7b44d6?text=RetailChain", "title": "RetailChain" },
+      { "id": 3, "image": "https://placehold.co/150x60/0d0d1f/6b00d7?text=ClinicNet", "title": "ClinicNet" },
+      { "id": 4, "image": "https://placehold.co/150x60/1a0a2e/9b30d9?text=LegalFirm", "title": "LegalFirm" },
+      { "id": 5, "image": "https://placehold.co/150x60/010427/7b44d6?text=EduTech", "title": "EduTech" },
+      { "id": 6, "image": "https://placehold.co/150x60/1a1a2e/6b00d7?text=MfgCorp", "title": "MfgCorp" }
+    ]
+  },
+  "moreUseCases": [
+    {
+      "title": "Managed Services",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Proactive+Monitoring", "title": "Proactive Monitoring", "description": "24/7 monitoring of your systems, servers, and websites with instant alerts and rapid response to prevent downtime." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Patch+Management", "title": "Patch Management", "description": "Keeping all software, operating systems, and applications up to date with automated patch management." },
+        { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Network+Management", "title": "Network Management", "description": "Managing your company's network infrastructure, WiFi, VPNs, and connectivity for maximum reliability." }
+      ]
+    },
+    {
+      "title": "Website Support",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=WordPress+Maintenance", "title": "WordPress Maintenance", "description": "Plugin updates, theme maintenance, performance optimization, and security hardening for WordPress sites." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Bug+Fixes", "title": "Bug Fixing & Troubleshooting", "description": "Rapid diagnosis and resolution of website bugs, broken features, display issues, and functionality errors." },
+        { "id": 3, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Performance+Tuning", "title": "Performance Optimization", "description": "Speed up your website with caching, CDN integration, image optimization, and database tuning." }
+      ]
+    },
+    {
+      "title": "Security",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/0d0d1f/9b30d9?text=Security+Audits", "title": "Security Audits", "description": "Comprehensive security assessments to identify vulnerabilities in your systems, websites, and applications." },
+        { "id": 2, "image": "https://placehold.co/350x200/1a0a2e/7b44d6?text=Malware+Removal", "title": "Malware Removal & Recovery", "description": "Fast malware detection, cleanup, and hardening to restore your systems and prevent re-infection." },
+        { "id": 3, "image": "https://placehold.co/350x200/010427/6b00d7?text=Data+Backup", "title": "Data Backup Solutions", "description": "Automated daily backups with offsite storage, encryption, and tested restore procedures." }
+      ]
+    }
+  ],
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about our IT service and support offerings.",
+    "FAQcard": [
+      { "title": "What response time can I expect for support tickets?", "description": "Our standard SLA is 4-hour response for non-critical issues and 1-hour for critical issues. We also offer 24/7 emergency support for clients on premium plans." },
+      { "title": "Do you offer on-site IT support?", "description": "Yes. For businesses in our service areas, we offer on-site support for hardware issues, network setup, and infrastructure work that can't be resolved remotely." },
+      { "title": "Can you manage our existing hosting and servers?", "description": "Absolutely. We can take over management of your existing infrastructure whether it's on AWS, Google Cloud, Azure, or traditional hosting providers." },
+      { "title": "How do you handle website emergencies?", "description": "We have a dedicated emergency response process. If your website goes down or gets hacked, our team mobilizes immediately to diagnose and resolve the issue — minimizing your downtime and data risk." },
+      { "title": "Do you offer monthly retainer plans?", "description": "Yes. We offer flexible monthly retainer packages based on your support needs, from basic website maintenance to full managed IT services. All plans include regular reporting and priority support." }
+    ]
+  }
+}

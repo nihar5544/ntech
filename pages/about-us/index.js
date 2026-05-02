@@ -1,4 +1,3 @@
-import ApiService from "@/Services/ApiService";
 import Getintouch from "@/components/forms/GetInTouch";
 import Motivations from "@/components/pageComponents/aboutpage/Motivations";
 import LeadershipTeam from "@/components/pageComponents/aboutpage/LeadershipTeam";
@@ -12,44 +11,47 @@ import Testimonials from "@/components/pageComponents/homepage/Testimonials";
 import React from "react";
 import AlliancesANdPatners from "@/components/pageComponents/homepage/AlliancesANdPatners";
 
-function AboutUs({ aboutUsPageData, testimonialsData, patnersData }) {
-  // console.log("aboutUsPageData",aboutUsPageData)
+import aboutUsData from "@/data/about-us.json";
+import testimonialsData from "@/data/shared/testimonials.json";
+import partnersData from "@/data/shared/partners.json";
+
+function AboutUs() {
   return (
     <main className="">
       {/* Who we are Banner */}
       <section className="">
-        <WhoWeAre data={aboutUsPageData?.Banner} />
+        <WhoWeAre data={aboutUsData?.Banner} />
       </section>
       {/* Insights from our CEO */}
       <section>
-        <OurCEO data={aboutUsPageData?.Insights} />
+        <OurCEO data={aboutUsData?.Insights} />
       </section>
       {/* Powered by Partners */}
       <section className="">
-        <Patners data={patnersData?.patner} />
+        <Patners data={partnersData?.patner} />
       </section>
       <section>
-        <Motivations data={aboutUsPageData?.KeepsUsMotivated} />
+        <Motivations data={aboutUsData?.KeepsUsMotivated} />
       </section>
       <section>
-        <AlliancesANdPatners data={aboutUsPageData?.alliancesAndPatners} />
+        <AlliancesANdPatners data={aboutUsData?.alliancesAndPatners} />
       </section>
       <section>
-        <TrustUs data={aboutUsPageData?.ClientsTrustUs} />
+        <TrustUs data={aboutUsData?.ClientsTrustUs} />
       </section>
       <section className="mb-[100px]">
-        <OurVisons data={aboutUsPageData?.ourVision} />
+        <OurVisons data={aboutUsData?.ourVision} />
       </section>
       <section className="container-padding-x my-9">
-        <LeadershipTeam data={aboutUsPageData?.LeadershipTeam} />
+        <LeadershipTeam data={aboutUsData?.LeadershipTeam} />
       </section>
       <section className="mt-[100px]">
-        <Project data={aboutUsPageData?.AIandBlockchainEvolution} />
+        <Project data={aboutUsData?.AIandBlockchainEvolution} />
       </section>
       <section className="flex items-start justify-center mb-10">
         <Testimonials
           testimonial={testimonialsData?.testimonial}
-          heading={aboutUsPageData?.headings?.Testimonials}
+          heading={aboutUsData?.headings?.Testimonials}
         />
       </section>
       <section className="">
@@ -60,31 +62,3 @@ function AboutUs({ aboutUsPageData, testimonialsData, patnersData }) {
 }
 
 export default AboutUs;
-
-export async function getServerSideProps() {
-  try {
-    const response = await ApiService.get("api/about-us");
-    const aboutUsPageData = response.data.data.attributes;
-    const testimonials = await ApiService.get("api/testimonials/testimonial");
-    const testimonialsData = testimonials.data.data.attributes;
-    const patners = await ApiService.get("api/patners/patner");
-    const patnersData = patners.data.data.attributes;
-    return {
-      props: {
-        aboutUsPageData,
-        testimonialsData,
-        patnersData,
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching data:", error);
-
-    return {
-      props: {
-        aboutUsPageData: null, // or some default value
-        testimonialsData: null,
-        patnersData: null,
-      },
-    };
-  }
-}

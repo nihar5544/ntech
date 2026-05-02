@@ -1,18 +1,15 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
-import ApiService from "@/Services/ApiService";
 import ScrollAnimation from "../Animation";
 import { useToast } from "../ui/use-toast";
 import { ButtonLoading } from "../ui/buttonloading";
 
 export default function Getintouch() {
-  
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -22,6 +19,7 @@ export default function Getintouch() {
   const [triggered, setTriggered] = useState(false);
   const [loading, setLoading] = useState(false);
   const { toast } = useToast();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === "firstName") {
@@ -81,48 +79,34 @@ export default function Getintouch() {
         message: message,
         mobile_no: number,
       };
-      await axios
-        .post(
+
+      try {
+        await axios.post(
           "https://ikxl2f3jzh6cufqtr3hbwepnmm0meelh.lambda-url.us-west-2.on.aws/",
           data
-        )
-        .then(() => {
-          setLoading(false);
-          setFirstName("");
-          setLastName("");
-          setEmail("");
-          setmessage("");
-          setNumber("");
-          // Toast.success("Thanks for reaching out. We'll get back to you soon!");
-        })
-        .catch((error) => {
-          console.log(error);
-          setLoading(false);
-          toast({
-            variant: "destructive",
-            title: "Uh oh! Something went wrong.",
-          });
+        );
+        setLoading(false);
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setmessage("");
+        setNumber("");
+        toast({
+          title: "Message sent!",
+          description: "Thanks for reaching out. We'll get back to you soon!",
         });
-
-      await ApiService.post("api/get-in-touches", { data })
-        .then(() => {
-          setLoading(false);
-          setFirstName("");
-          setLastName("");
-          setEmail("");
-          setmessage("");
-          setNumber("");
-        })
-        .catch((error) => {
-          setLoading(false);
-          console.log(error);
-          toast({
-            variant: "destructive",
-            title: "Uh oh! Something went wrong.",
-          });
+      } catch (err) {
+        console.error(err);
+        setLoading(false);
+        toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "Please try again or contact us directly.",
         });
+      }
     }
   };
+
   return (
     <div
       className=" banner-padding-x"
@@ -146,7 +130,7 @@ export default function Getintouch() {
         >
           <div className="w-full cursor-pointer p-6 grid gap-4">
             <h5 className="text-[25px] lg:text-[30px] font-bold text-[#333]">
-              Let’s spark the Idea
+              Let&apos;s spark the Idea
               <br />
             </h5>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
@@ -190,14 +174,12 @@ export default function Getintouch() {
               <div className="flex flex-col justify-between">
                 <Label htmlFor="number">Number</Label>
                 <Input
-                  placeholder="Country[code + Number]"
+                  placeholder="Country [code + Number]"
                   id="number"
                   value={number}
                   type="number"
                   name="number"
-                  style={{
-                    color: "#92929D",
-                  }}
+                  style={{ color: "#92929D" }}
                   onChange={handleChange}
                 />
                 <div className="text-[12px] text-red-500">
@@ -217,7 +199,6 @@ export default function Getintouch() {
                 className="flex min-h-[60px] mt-5 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 resize-none"
                 placeholder="Tell us a little bit about yourself"
               />
-
               <div className="text-[12px] text-red-500">{error.Message}</div>
             </div>
             <div className="flex w-full flex-col">
@@ -236,7 +217,7 @@ export default function Getintouch() {
                 src="https://assets-global.website-files.com/64bf9f837519806dd618348c/65bbdec63ea06da49b2e8c96_Rapid-form-image.png"
                 loading="lazy"
                 sizes="(max-width: 479px) 90vw, (max-width: 767px) 80vw, (max-width: 991px) 70vw, (max-width: 1279px) 27vw, (max-width: 1919px) 28vw, 24vw"
-                alt=""
+                alt="Book a call"
                 width="0"
                 height="0"
                 className="w-full h-full object-cover"
@@ -254,7 +235,7 @@ export default function Getintouch() {
                       src="https://assets-global.website-files.com/64bf9f837519806dd618348c/65150fd2b28fb0533208e585_4.svg"
                       width="0"
                       height="0"
-                      alt=""
+                      alt="NDA"
                       className="w-[24px] h-[24px] lg:w-[36px] lg:h-[36px]"
                     />
                   </div>
@@ -270,7 +251,7 @@ export default function Getintouch() {
                       src="https://assets-global.website-files.com/64bf9f837519806dd618348c/65150fd1b28fb0533208e2d9_5.svg"
                       width="0"
                       height="0"
-                      alt=""
+                      alt="Confidential"
                       className="w-[24px] h-[24px] lg:w-[36px] lg:h-[36px]"
                     />
                   </div>
@@ -285,7 +266,7 @@ export default function Getintouch() {
                       src="https://assets-global.website-files.com/64bf9f837519806dd618348c/65150fd1264f9cd285109c5a_6.svg"
                       width="0"
                       height="0"
-                      alt=""
+                      alt="Free Consultation"
                       className="w-[24px] h-[24px] lg:w-[36px] lg:h-[36px]"
                     />
                   </div>
@@ -300,7 +281,7 @@ export default function Getintouch() {
                       src="https://assets-global.website-files.com/64bf9f837519806dd618348c/65150fd17132709caba6ac84_1.svg"
                       width="0"
                       height="0"
-                      alt=""
+                      alt="No Obligation"
                       className="w-[24px] h-[24px] lg:w-[36px] lg:h-[36px]"
                     />
                   </div>

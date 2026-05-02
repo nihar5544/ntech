@@ -10,12 +10,7 @@ function BannerIndustry({ data }) {
   return (
     <div
       style={{
-        backgroundImage: `url(${
-          process.env.NEXT_PUBLIC_BASE_URL
-        }${data?.bgImage?.data?.attributes?.url
-          ?.split("/")
-          ?.splice(1)
-          ?.join("/")})`,
+        backgroundImage: `url(${typeof data?.bgImage === "string" ? data.bgImage : `${process.env.NEXT_PUBLIC_BASE_URL}${data?.bgImage?.data?.attributes?.url?.split("/")?.splice(1)?.join("/")}`})`,
       }}
     >
       <div className="banner-padding-x py-0 ">

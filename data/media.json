@@ -1,0 +1,48 @@
+{
+  "banner": {
+    "title": "ntech Media — Insights, Guides & Digital Shorts",
+    "description": "Stay ahead of the curve with expert insights on web development, design trends, SEO strategies, game development, and IT best practices from the ntech team.",
+    "image": "https://placehold.co/600x400/010427/6b00d7?text=ntech+Media"
+  },
+  "LatestEpisode": {
+    "title": "Latest Episodes",
+    "card": [
+      { "id": 1, "video": "https://placehold.co/400x250/1a1a2e/9b30d9?text=Web+Dev+Trends+2025", "title": "Web Development Trends in 2025", "description": "A deep-dive into the frameworks, tools, and approaches defining modern web development — from server components to AI-assisted coding." },
+      { "id": 2, "video": "https://placehold.co/400x250/010427/7b44d6?text=Ecommerce+Conversion+Tips", "title": "10 Ecommerce Conversion Rate Tricks", "description": "Our lead developer walks through the specific UX and technical optimizations that consistently lift ecommerce conversion rates." },
+      { "id": 3, "video": "https://placehold.co/400x250/0d0d1f/6b00d7?text=SEO+in+2025", "title": "SEO in 2025: What Actually Works", "description": "An honest look at what SEO tactics are driving results today — and which outdated approaches are wasting your budget." },
+      { "id": 4, "video": "https://placehold.co/400x250/1a0a2e/9b30d9?text=Game+Dev+Journey", "title": "From Idea to App Store: Game Dev Journey", "description": "We document the full development journey of a mobile game — from concept and prototyping through to launch and first 10,000 downloads." },
+      { "id": 5, "video": "https://placehold.co/400x250/010427/7b44d6?text=Brand+Design+Mistakes", "title": "5 Brand Design Mistakes Killing Your Business", "description": "Our creative director breaks down the most common branding mistakes we see and how to fix them without a complete rebrand." },
+      { "id": 6, "video": "https://placehold.co/400x250/1a1a2e/6b00d7?text=IT+Security+Basics", "title": "IT Security Basics Every Business Needs", "description": "Essential cybersecurity practices for small and medium businesses that don't have a dedicated IT team." }
+    ]
+  },
+  "projectIdea": {
+    "image": "/images/extraBg.png",
+    "title": "Have a Digital Project Idea?",
+    "description": "Turn your vision into reality. Our expert team is ready to help you design, build, and launch your perfect digital solution.",
+    "Button": {
+      "title": "Talk to Our Experts",
+      "link": "/contact-us",
+      "icon": ""
+    }
+  },
+  "Insights": {
+    "image": "https://ui-avatars.com/api/?name=John+Doe&size=300&background=1a1a2e&color=9b30d9&bold=true",
+    "title": "Insights from Our CEO",
+    "name": "John Doe",
+    "position": "Chief Executive Officer, ntech",
+    "discription": "The digital landscape is evolving faster than ever. From AI-powered tools to no-code platforms, the opportunities for businesses willing to invest in their digital presence are limitless. At ntech, we're committed to helping our clients navigate this transformation with confidence, clarity, and cutting-edge technology."
+  },
+  "exploreShorts": {
+    "title": "Explore Digital Shorts",
+    "card": [
+      { "id": 1, "video": "https://placehold.co/200x300/1a1a2e/9b30d9?text=What+is+SEO", "title": "What is SEO?" },
+      { "id": 2, "video": "https://placehold.co/200x300/010427/7b44d6?text=React+in+60s", "title": "React in 60 Seconds" },
+      { "id": 3, "video": "https://placehold.co/200x300/0d0d1f/6b00d7?text=How+Unity+Works", "title": "How Unity Works" },
+      { "id": 4, "video": "https://placehold.co/200x300/1a0a2e/9b30d9?text=What+is+UX", "title": "What is UX Design?" },
+      { "id": 5, "video": "https://placehold.co/200x300/010427/7b44d6?text=Core+Web+Vitals", "title": "Core Web Vitals Explained" },
+      { "id": 6, "video": "https://placehold.co/200x300/1a1a2e/6b00d7?text=What+is+CMS", "title": "What is a CMS?" },
+      { "id": 7, "video": "https://placehold.co/200x300/0d0d1f/9b30d9?text=Responsive+Design", "title": "Responsive Design in 60s" },
+      { "id": 8, "video": "https://placehold.co/200x300/1a0a2e/7b44d6?text=What+is+DevOps", "title": "What is DevOps?" }
+    ]
+  }
+}

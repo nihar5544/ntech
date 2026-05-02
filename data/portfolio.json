@@ -1,0 +1,32 @@
+{
+  "banner": {
+    "title": "Our Client Success Stories",
+    "image": "https://placehold.co/600x300/010427/6b00d7?text=Client+Success+Stories"
+  },
+  "ClientsTrustUs": {
+    "title": "Clients Who Trust Our Expertise",
+    "subtitle": "From growing startups to established enterprises, our clients span every industry and business type.",
+    "list": [
+      { "id": 1, "image": "https://placehold.co/150x60/1a1a2e/9b30d9?text=ShopEasy", "title": "ShopEasy" },
+      { "id": 2, "image": "https://placehold.co/150x60/010427/7b44d6?text=GameForge", "title": "GameForge Studio" },
+      { "id": 3, "image": "https://placehold.co/150x60/0d0d1f/6b00d7?text=GrowthCo", "title": "GrowthCo" },
+      { "id": 4, "image": "https://placehold.co/150x60/1a0a2e/9b30d9?text=ClinicNet", "title": "ClinicNet" },
+      { "id": 5, "image": "https://placehold.co/150x60/010427/7b44d6?text=CreativeHub", "title": "CreativeHub" },
+      { "id": 6, "image": "https://placehold.co/150x60/1a1a2e/6b00d7?text=RetailMax", "title": "RetailMax" },
+      { "id": 7, "image": "https://placehold.co/150x60/0d0d1f/9b30d9?text=EduTech", "title": "EduTech Academy" },
+      { "id": 8, "image": "https://placehold.co/150x60/1a0a2e/7b44d6?text=AgencyPro", "title": "AgencyPro" }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Businesses Choose ntech",
+    "description": "We don't just build digital products — we partner with you to create solutions that stand the test of time, grow with your business, and deliver measurable ROI.",
+    "card": {
+      "description": "Our solutions are architected for performance, scalability, and long-term success — built to handle real-world demands while remaining cost-efficient to maintain.",
+      "subDesciption": "End-to-end ownership of your digital journey — from strategy and design through development, launch, SEO, and ongoing IT support.",
+      "image": "https://placehold.co/400x300/010427/6b00d7?text=Why+Choose+ntech"
+    }
+  },
+  "headings": {
+    "Testimonials": "What Our Clients Say"
+  }
+}

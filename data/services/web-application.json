@@ -1,0 +1,78 @@
+{
+  "banner": {
+    "title": "Custom Web Application Development Services",
+    "description": "We build powerful, scalable web applications — from ecommerce stores and sales platforms to content management systems and custom business tools — tailored exactly to how your business operates.",
+    "schedualCallButton": { "title": "Schedule a Discovery Call" },
+    "projectCostButton": { "title": "Get Project Cost" },
+    "image": "https://placehold.co/550x500/010427/6b00d7?text=Web+Application"
+  },
+  "developmentServices": {
+    "title": "Our Web Application Development Services",
+    "description": "Full-stack web application development built for performance, security, and scalability.",
+    "subtitle": "End-to-End Application Solutions",
+    "cards": [
+      { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Ecommerce", "title": "Ecommerce Applications", "description": "Feature-rich online stores with product management, payment gateways, inventory tracking, and order management." },
+      { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Sales+Application", "title": "Sales Applications", "description": "Custom CRM and sales automation tools that help your team manage leads, track pipelines, and close deals faster." },
+      { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=CMS", "title": "Content Management Systems", "description": "Intuitive CMS platforms that let your team publish, manage, and update content without any technical knowledge." },
+      { "id": 4, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Business+App", "title": "Custom Business Apps", "description": "Bespoke business applications tailored to your internal workflows, reporting needs, and team collaboration." },
+      { "id": 5, "image": "https://placehold.co/350x200/010427/7b44d6?text=SaaS+Platform", "title": "SaaS Platforms", "description": "Multi-tenant SaaS product development with subscription billing, role-based access, and dashboard analytics." },
+      { "id": 6, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Booking+App", "title": "Booking & Scheduling Apps", "description": "Online booking systems, appointment schedulers, and reservation platforms for service-based businesses." }
+    ]
+  },
+  "automateTasks": {
+    "title": "Automate Your Business Operations with Smart Web Apps",
+    "description": "The right web application eliminates manual work, reduces errors, and scales with your business. We build applications that integrate with your existing tools and automate repetitive tasks — freeing your team to focus on what matters most.",
+    "image": "/images/extraBg.png",
+    "sideImage": "https://placehold.co/300x300/010427/9b30d9?text=Automate+Operations",
+    "Button": { "title": "Build Your Web Application", "link": "/contact-us", "icon": "" }
+  },
+  "ClientsTrustUs": {
+    "title": "Businesses Powered by Our Applications",
+    "subtitle": "From retail and hospitality to finance and healthcare — we've built applications that run core operations for businesses worldwide.",
+    "list": [
+      { "id": 1, "image": "https://placehold.co/150x60/1a1a2e/9b30d9?text=ShopEasy", "title": "ShopEasy" },
+      { "id": 2, "image": "https://placehold.co/150x60/010427/7b44d6?text=SalesForce+Pro", "title": "SalesForce Pro" },
+      { "id": 3, "image": "https://placehold.co/150x60/0d0d1f/6b00d7?text=RetailMax", "title": "RetailMax" },
+      { "id": 4, "image": "https://placehold.co/150x60/1a0a2e/9b30d9?text=BookingHub", "title": "BookingHub" },
+      { "id": 5, "image": "https://placehold.co/150x60/010427/7b44d6?text=ManageIt", "title": "ManageIt" },
+      { "id": 6, "image": "https://placehold.co/150x60/1a1a2e/6b00d7?text=ContentPro", "title": "ContentPro" }
+    ]
+  },
+  "moreUseCases": [
+    {
+      "title": "Ecommerce",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Online+Store", "title": "Online Store", "description": "Full-featured ecommerce stores with product catalogs, cart, checkout, payments, and inventory management." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Marketplace", "title": "Multi-Vendor Marketplace", "description": "Platforms like Amazon or Etsy where multiple sellers list and sell products through a unified storefront." },
+        { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Subscription", "title": "Subscription Commerce", "description": "Recurring billing platforms with plan management, trial periods, and customer self-service portals." }
+      ]
+    },
+    {
+      "title": "Business Tools",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=CRM", "title": "CRM Systems", "description": "Customer relationship management tools to track leads, deals, communications, and customer history." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=HR+Portal", "title": "HR & Employee Portals", "description": "Internal HR platforms for onboarding, time tracking, leave management, and employee self-service." },
+        { "id": 3, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Analytics+Dashboard", "title": "Analytics Dashboards", "description": "Real-time business intelligence dashboards that surface insights from your data with visual reporting." }
+      ]
+    },
+    {
+      "title": "Platforms",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/0d0d1f/9b30d9?text=Learning+Management", "title": "Learning Management Systems", "description": "Course platforms with video content, quizzes, progress tracking, and student management." },
+        { "id": 2, "image": "https://placehold.co/350x200/1a0a2e/7b44d6?text=Healthcare+Portal", "title": "Healthcare Portals", "description": "Patient management systems, appointment booking, telemedicine features, and medical records access." },
+        { "id": 3, "image": "https://placehold.co/350x200/010427/6b00d7?text=Real+Estate+App", "title": "Real Estate Platforms", "description": "Property listing platforms with search, filters, virtual tours, and agent management." }
+      ]
+    }
+  ],
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about our web application development services.",
+    "FAQcard": [
+      { "title": "How long does a web application take to build?", "description": "Simple web apps take 4–8 weeks. Complex platforms with advanced features, integrations, and custom workflows typically take 3–6 months. We provide detailed timelines during the discovery phase." },
+      { "title": "What technologies do you use for web applications?", "description": "We use React, Next.js, Node.js, Python, and PHP for most projects. For ecommerce we leverage Shopify or WooCommerce where appropriate. We always recommend the best stack for your specific use case." },
+      { "title": "Can you integrate with third-party tools?", "description": "Absolutely. We have experience integrating payment gateways (Stripe, PayPal), CRMs, ERPs, email platforms, analytics tools, and hundreds of third-party APIs." },
+      { "title": "How do you ensure the application is secure?", "description": "We follow security best practices including input validation, SQL injection prevention, HTTPS enforcement, role-based access control, and regular dependency audits." },
+      { "title": "Do you provide ongoing support after launch?", "description": "Yes. We offer tiered maintenance and support packages that include bug fixes, performance monitoring, feature updates, and priority response times." }
+    ]
+  }
+}

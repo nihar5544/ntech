@@ -10,12 +10,7 @@ function Project({ data }) {
     <div
       className="banner-padding-x bg-no-repeat bg-cover text-white bg-right max-sm:bg-left"
       style={{
-        backgroundImage: `url(${
-          process.env.NEXT_PUBLIC_BASE_URL
-        }${data?.image?.data?.attributes?.url
-          ?.split("/")
-          ?.splice(1)
-          ?.join("/")})`,
+        backgroundImage: `url(${typeof data?.image === "string" ? data.image : `${process.env.NEXT_PUBLIC_BASE_URL}${data?.image?.data?.attributes?.url?.split("/")?.splice(1)?.join("/")}`})`,
       }}
     >
       <ScrollAnimation setTriggered={setTriggered} triggered={triggered} />

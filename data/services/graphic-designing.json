@@ -1,0 +1,78 @@
+{
+  "banner": {
+    "title": "Creative Graphic Design Services",
+    "description": "We create powerful visual identities that make your brand unforgettable. From logos and brand guidelines to banners, posters, and social media graphics — we design with purpose, creativity, and precision.",
+    "schedualCallButton": { "title": "Schedule a Discovery Call" },
+    "projectCostButton": { "title": "Get Project Cost" },
+    "image": "https://placehold.co/550x500/010427/ec4899?text=Graphic+Design"
+  },
+  "developmentServices": {
+    "title": "Our Graphic Design Services",
+    "description": "Creative design services that communicate your brand story and captivate your target audience.",
+    "subtitle": "Complete Visual Design Solutions",
+    "cards": [
+      { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Logo+Design", "title": "Logo Design", "description": "Distinctive, memorable logo designs that capture your brand's essence and work across all media and sizes." },
+      { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Brand+Identity", "title": "Brand Identity", "description": "Complete brand identity packages including logo, color palette, typography, and usage guidelines." },
+      { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Banner+Design", "title": "Banner & Ad Design", "description": "Eye-catching banners for websites, social media, and digital advertising campaigns that drive clicks." },
+      { "id": 4, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Poster+Design", "title": "Poster & Flyer Design", "description": "Print-ready and digital poster and flyer designs for events, promotions, and marketing campaigns." },
+      { "id": 5, "image": "https://placehold.co/350x200/010427/7b44d6?text=Social+Media+Graphics", "title": "Social Media Graphics", "description": "Scroll-stopping social media visuals for Instagram, Facebook, LinkedIn, Twitter, and other platforms." },
+      { "id": 6, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=UI+UX+Design", "title": "UI/UX Design", "description": "Intuitive and visually stunning user interface designs for websites and applications with full Figma prototypes." }
+    ]
+  },
+  "automateTasks": {
+    "title": "Great Design is Great Business",
+    "description": "First impressions are formed in milliseconds. Strong design builds trust, communicates value, and makes your brand the obvious choice over competitors. We design visuals that your audience remembers — and your business benefits from.",
+    "image": "/images/extraBg.png",
+    "sideImage": "https://placehold.co/300x300/010427/ec4899?text=Creative+Design",
+    "Button": { "title": "Start Your Design Project", "link": "/contact-us", "icon": "" }
+  },
+  "ClientsTrustUs": {
+    "title": "Brands We've Helped Define",
+    "subtitle": "From early-stage startups defining their identity to established companies refreshing their look, we've designed for brands across every industry.",
+    "list": [
+      { "id": 1, "image": "https://placehold.co/150x60/1a1a2e/9b30d9?text=BrandCo", "title": "BrandCo" },
+      { "id": 2, "image": "https://placehold.co/150x60/010427/7b44d6?text=VisualPro", "title": "VisualPro" },
+      { "id": 3, "image": "https://placehold.co/150x60/0d0d1f/6b00d7?text=CreativeLabs", "title": "CreativeLabs" },
+      { "id": 4, "image": "https://placehold.co/150x60/1a0a2e/9b30d9?text=StyleMark", "title": "StyleMark" },
+      { "id": 5, "image": "https://placehold.co/150x60/010427/7b44d6?text=DesignEdge", "title": "DesignEdge" },
+      { "id": 6, "image": "https://placehold.co/150x60/1a1a2e/6b00d7?text=IdeaForge", "title": "IdeaForge" }
+    ]
+  },
+  "moreUseCases": [
+    {
+      "title": "Brand",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Logo+Creation", "title": "Logo & Identity Creation", "description": "Building brands from scratch — name, logo, tagline, and visual identity system that stands out in the market." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Rebrand", "title": "Brand Refresh & Rebrand", "description": "Modernizing outdated brand visuals while preserving equity and recognition with your existing customer base." },
+        { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Style+Guide", "title": "Brand Style Guides", "description": "Comprehensive brand guidelines ensuring consistent application of your identity across all touchpoints." }
+      ]
+    },
+    {
+      "title": "Marketing",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Digital+Ads", "title": "Digital Ad Creatives", "description": "Conversion-optimized ad visuals for Google Display, Facebook, Instagram, and LinkedIn ad campaigns." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Email+Templates", "title": "Email Templates", "description": "Beautifully designed HTML email templates for newsletters, promotions, and automated campaigns." },
+        { "id": 3, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Pitch+Deck", "title": "Pitch Decks & Presentations", "description": "Visually compelling pitch decks and presentation templates that make your ideas impossible to ignore." }
+      ]
+    },
+    {
+      "title": "Print & Media",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/0d0d1f/9b30d9?text=Print+Design", "title": "Print Design", "description": "Brochures, business cards, letterheads, and packaging designed to professional print specifications." },
+        { "id": 2, "image": "https://placehold.co/350x200/1a0a2e/7b44d6?text=Infographics", "title": "Infographics", "description": "Data-driven infographics that make complex information visually engaging and easy to understand." },
+        { "id": 3, "image": "https://placehold.co/350x200/010427/6b00d7?text=Illustrations", "title": "Custom Illustrations", "description": "Bespoke illustrations and icon sets that give your brand a unique visual language across digital and print." }
+      ]
+    }
+  ],
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Have questions about our graphic design services? We've got answers.",
+    "FAQcard": [
+      { "title": "What file formats will I receive?", "description": "We deliver all final files in formats suitable for print and digital use — typically AI, EPS, SVG (vector), plus PNG and JPG (raster). You'll own all files and full rights to the designs." },
+      { "title": "How many revision rounds are included?", "description": "Our standard packages include 3 revision rounds. We work collaboratively to ensure the final design exceeds your expectations. Additional revisions can be arranged if needed." },
+      { "title": "Do you offer rush delivery?", "description": "Yes, we offer priority design services for tight deadlines. Rush pricing applies and depends on the scope and complexity of the project." },
+      { "title": "What information do you need to start a logo project?", "description": "We start with a design brief covering your brand values, target audience, industry, competitors, preferred style, and any color or style references you like or want to avoid." },
+      { "title": "Can you design for both print and digital?", "description": "Absolutely. We design with both print and digital outputs in mind, ensuring your visuals look perfect whether on a business card, billboard, or smartphone screen." }
+    ]
+  }
+}

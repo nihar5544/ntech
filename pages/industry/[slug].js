@@ -1,4 +1,5 @@
-import ApiService from "@/Services/ApiService";
+import fs from "fs";
+import path from "path";
 import Getintouch from "@/components/forms/GetInTouch";
 import Patners from "@/components/pageComponents/homepage/Patners";
 import Testimonials from "@/components/pageComponents/homepage/Testimonials";
@@ -6,11 +7,9 @@ import BannerIndustry from "@/components/pageComponents/industrypage/BannerIndus
 import IndustryCards from "@/components/pageComponents/industrypage/IndustryCards";
 import WhyChoose from "@/components/pageComponents/industrypage/WhyChoose";
 import UseCases from "@/components/pageComponents/servicepages/UseCases";
-
 import React from "react";
 
 function Post({ industryData, testimonialsData, patnersData }) {
-  console.log("industryData", industryData);
   return (
     <main className="">
       <section>
@@ -20,7 +19,7 @@ function Post({ industryData, testimonialsData, patnersData }) {
         <Patners data={patnersData?.patner} />
       </section>
       <section>
-      <IndustryCards data={industryData?.services} />
+        <IndustryCards data={industryData?.services} />
       </section>
       <section>
         <UseCases data={[industryData?.moreUseCases]} />
@@ -42,19 +41,28 @@ function Post({ industryData, testimonialsData, patnersData }) {
 }
 
 export default Post;
-export async function getServerSideProps(context) {
+
+export async function getStaticPaths() {
+  const dataDir = path.join(process.cwd(), "data", "industry");
+  const files = fs.readdirSync(dataDir).filter((f) => f.endsWith(".json"));
+  const paths = files.map((file) => ({
+    params: { slug: file.replace(".json", "") },
+  }));
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps(context) {
   const { slug } = context.params;
   try {
-    const response = await ApiService.get(`api/industries/${slug}`);
-    console.log("response", response);
-    const testimonials = await ApiService.get("api/testimonials/testimonial");
-    const testimonialsData = testimonials.data.data.attributes;
-    const patners = await ApiService.get("api/patners/patner");
-    const patnersData = patners.data.data.attributes;
-    // Transform keys to camelCase
-    const industryData = transformKeysToCamelCase(
-      response.data.data.attributes
-    );
+    const filePath = path.join(process.cwd(), "data", "industry", `${slug}.json`);
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    const industryData = JSON.parse(fileContents);
+
+    const testimonialsPath = path.join(process.cwd(), "data", "shared", "testimonials.json");
+    const testimonialsData = JSON.parse(fs.readFileSync(testimonialsPath, "utf8"));
+
+    const partnersPath = path.join(process.cwd(), "data", "shared", "partners.json");
+    const patnersData = JSON.parse(fs.readFileSync(partnersPath, "utf8"));
 
     return {
       props: {
@@ -64,32 +72,7 @@ export async function getServerSideProps(context) {
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error);
-
-    return {
-      props: {
-        industryData: null, // or some default value
-        testimonialsData: null,
-        patnersData: null,
-      },
-    };
+    console.error("Error loading industry data:", error);
+    return { notFound: true };
   }
-}
-
-// Utility function to transform keys to camelCase
-function transformKeysToCamelCase(obj) {
-  if (obj === null || typeof obj !== "object") {
-    return obj;
-  }
-
-  if (Array.isArray(obj)) {
-    return obj.map(transformKeysToCamelCase);
-  }
-
-  return Object.fromEntries(
-    Object.entries(obj).map(([key, value]) => [
-      key.replace(/-([a-z])/g, (match) => match[1].toUpperCase()),
-      transformKeysToCamelCase(value),
-    ])
-  );
 }

@@ -1,0 +1,78 @@
+{
+  "banner": {
+    "title": "Professional Web Page Development Services",
+    "description": "We design and build stunning, high-performance websites tailored to your brand. From single-page sites to full information portals, we craft digital experiences that make lasting impressions and drive real results.",
+    "schedualCallButton": { "title": "Schedule a Discovery Call" },
+    "projectCostButton": { "title": "Get Project Cost" },
+    "image": "https://placehold.co/550x500/010427/6b00d7?text=Web+Page+Development"
+  },
+  "developmentServices": {
+    "title": "Our Web Page Development Services",
+    "description": "We build pixel-perfect, fully responsive websites that convert visitors into loyal customers.",
+    "subtitle": "End-to-End Website Solutions",
+    "cards": [
+      { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Single+Page+Website", "title": "Single Page Website", "description": "Clean, fast-loading single-page websites ideal for showcasing products, services, or personal brands with impact." },
+      { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Information+Website", "title": "Information Website", "description": "Multi-page information websites with clear navigation, SEO-optimized content, and a professional design layout." },
+      { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Portfolio+Website", "title": "Portfolio Website", "description": "Stunning portfolio sites for creatives, agencies, and professionals to showcase their best work beautifully." },
+      { "id": 4, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Business+Website", "title": "Business Website", "description": "Professional corporate websites with service pages, team profiles, case studies, and lead capture integrations." },
+      { "id": 5, "image": "https://placehold.co/350x200/010427/7b44d6?text=Landing+Page", "title": "Landing Pages", "description": "High-converting landing pages designed and A/B tested to drive sign-ups, sales, and lead generation." },
+      { "id": 6, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Blog+Website", "title": "Blog & Content Sites", "description": "Content-driven websites with blogging capabilities, SEO architecture, and easy-to-use content management." }
+    ]
+  },
+  "automateTasks": {
+    "title": "Websites That Work for Your Business 24/7",
+    "description": "A great website is your best salesperson — always on, always available. We build websites that load fast, rank well on search engines, and guide every visitor to take the action that grows your business.",
+    "image": "/images/extraBg.png",
+    "sideImage": "https://placehold.co/300x300/010427/9b30d9?text=Always+On",
+    "Button": { "title": "Start Your Website Project", "link": "/contact-us", "icon": "" }
+  },
+  "ClientsTrustUs": {
+    "title": "Brands That Trust Our Web Development",
+    "subtitle": "From startups to established businesses, we've helped companies across every industry build their perfect online presence.",
+    "list": [
+      { "id": 1, "image": "https://placehold.co/150x60/1a1a2e/9b30d9?text=StartupCo", "title": "StartupCo" },
+      { "id": 2, "image": "https://placehold.co/150x60/010427/7b44d6?text=CreativeHub", "title": "CreativeHub" },
+      { "id": 3, "image": "https://placehold.co/150x60/0d0d1f/6b00d7?text=RetailBrand", "title": "RetailBrand" },
+      { "id": 4, "image": "https://placehold.co/150x60/1a0a2e/9b30d9?text=AgencyPro", "title": "AgencyPro" },
+      { "id": 5, "image": "https://placehold.co/150x60/010427/7b44d6?text=MediaHouse", "title": "MediaHouse" },
+      { "id": 6, "image": "https://placehold.co/150x60/1a1a2e/6b00d7?text=HealthCare+Inc", "title": "HealthCare Inc" }
+    ]
+  },
+  "moreUseCases": [
+    {
+      "title": "Business",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Corporate+Site", "title": "Corporate Website", "description": "Professional corporate sites that build trust, communicate your value proposition, and generate qualified leads." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Service+Pages", "title": "Service Pages", "description": "Dedicated service pages with clear CTAs that guide potential customers through your full range of offerings." },
+        { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Lead+Capture", "title": "Lead Capture Forms", "description": "Integrated contact forms, chatbots, and booking systems to capture and convert more qualified leads." }
+      ]
+    },
+    {
+      "title": "Creative",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Portfolio", "title": "Portfolio Sites", "description": "Visually striking portfolio websites for photographers, designers, artists, and creative agencies." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Personal+Brand", "title": "Personal Branding", "description": "Personal websites that establish authority, showcase expertise, and attract new opportunities." },
+        { "id": 3, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Event+Page", "title": "Event Pages", "description": "Dynamic event pages with registration, countdown timers, and speaker and schedule showcases." }
+      ]
+    },
+    {
+      "title": "Informational",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/0d0d1f/9b30d9?text=Blog", "title": "Blogs & News Sites", "description": "Content-rich blogs and news portals with category management, search functionality, and social sharing." },
+        { "id": 2, "image": "https://placehold.co/350x200/1a0a2e/7b44d6?text=Knowledge+Base", "title": "Knowledge Base", "description": "Searchable documentation and help centers that reduce support tickets and empower your users." },
+        { "id": 3, "image": "https://placehold.co/350x200/010427/6b00d7?text=Directory", "title": "Directory Websites", "description": "Business or listing directories with search filters, map integration, and user submission features." }
+      ]
+    }
+  ],
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Have questions about our web page development services? We've got answers.",
+    "FAQcard": [
+      { "title": "How long does it take to build a website?", "description": "A simple single-page or landing page typically takes 1–2 weeks. A full multi-page business website takes 3–6 weeks depending on content, design complexity, and revision rounds." },
+      { "title": "Do you build mobile-responsive websites?", "description": "Yes, every website we build is fully responsive and optimized for desktop, tablet, and mobile devices. Mobile-first design is our standard approach across all projects." },
+      { "title": "What technologies do you use?", "description": "We build with modern technologies including React, Next.js, WordPress, and plain HTML/CSS/JS. We recommend the best stack based on your project's specific needs and budget." },
+      { "title": "Will my website be SEO-friendly?", "description": "Absolutely. We follow SEO best practices in our development process — proper HTML structure, fast load times, meta tags, clean URLs, and schema markup are all standard." },
+      { "title": "Do you provide ongoing website maintenance?", "description": "Yes, we offer maintenance and support packages to keep your website updated, secure, and performing at its best long after launch." }
+    ]
+  }
+}

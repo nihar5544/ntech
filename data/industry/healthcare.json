@@ -1,0 +1,37 @@
+{
+  "banner": {
+    "title": "Digital Solutions for the Healthcare Industry",
+    "description": "We build HIPAA-compliant websites, patient portals, appointment booking systems, and healthcare IT infrastructure that improve patient experience and streamline clinical operations.",
+    "button": { "title": "Build Your Healthcare Solution", "link": "/contact-us" },
+    "bgImage": "/images/_herobg.webp"
+  },
+  "services": {
+    "title": "Healthcare Digital Solutions We Build",
+    "description": "Purpose-built digital tools for clinics, hospitals, health tech companies, and wellness brands.",
+    "card": [
+      { "id": 1, "icon": "/images/icons/devicons/react-original.svg", "title": "Patient Portals", "description": "Secure patient portals with appointment booking, test results, prescription management, and telemedicine features." },
+      { "id": 2, "icon": "/images/icons/devicons/html5-original.svg", "title": "Healthcare Websites", "description": "Professional clinic and hospital websites with doctor profiles, service pages, and online appointment request forms." },
+      { "id": 3, "icon": "/images/icons/devicons/chrome-original.svg", "title": "Healthcare SEO", "description": "Local SEO and content strategies that help clinics and health businesses rank for medical search terms in their area." },
+      { "id": 4, "icon": "/images/icons/devicons/nodejs-original.svg", "title": "Practice Management Software", "description": "Custom scheduling, billing, and patient management systems integrated with your existing clinical workflows." },
+      { "id": 5, "icon": "/images/icons/devicons/figma-original.svg", "title": "Healthcare Branding & Design", "description": "Professional healthcare brand identities and marketing materials that build patient trust and brand recognition." },
+      { "id": 6, "icon": "/images/icons/devicons/linux-original.svg", "title": "Healthcare IT Support", "description": "Managed IT services for clinics including network management, data backup, security compliance, and helpdesk support." }
+    ]
+  },
+  "moreUseCases": {
+    "title": "Healthcare Use Cases",
+    "cards": [
+      { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Telemedicine+Platform", "title": "Telemedicine Platforms", "description": "Video consultation platforms with scheduling, patient intake forms, prescription management, and payment processing." },
+      { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Health+App", "title": "Health & Wellness Apps", "description": "Fitness tracking, mental health, nutrition, and wellness applications for consumer and clinical use." },
+      { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Medical+Directory", "title": "Doctor & Clinic Directories", "description": "Location-based directories connecting patients with the right healthcare providers in their area." }
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Healthcare Organizations Choose ntech",
+    "description": "We build healthcare digital solutions that are secure, compliant, user-friendly, and focused on improving patient outcomes.",
+    "card": {
+      "description": "Our healthcare solutions prioritize data security, user experience, and compliance — ensuring patient trust and operational efficiency.",
+      "subDesciption": "From websites and patient portals to IT infrastructure and SEO, we provide everything healthcare businesses need to thrive digitally.",
+      "image": "https://placehold.co/400x300/010427/6b00d7?text=Healthcare+IT"
+    }
+  }
+}

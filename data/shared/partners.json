@@ -1,0 +1,35 @@
+{
+  "patner": {
+    "image": "/images/icons/devicons/react-original.svg",
+    "title": "Powered By Industry-Leading Technologies",
+    "subtitle": "We work with the world's best tools and platforms to build exceptional digital products for our clients.",
+    "row1": [
+      { "id": 1,  "image": "/images/icons/devicons/react-original.svg",                       "name": "React",      "alt": "React" },
+      { "id": 2,  "image": "/images/icons/devicons/nextjs-original.svg",                      "name": "Next.js",    "alt": "Next.js",   "whiteBg": true },
+      { "id": 3,  "image": "/images/icons/devicons/nodejs-original.svg",                      "name": "Node.js",    "alt": "Node.js" },
+      { "id": 4,  "image": "/images/icons/devicons/python-original.svg",                      "name": "Python",     "alt": "Python" },
+      { "id": 5,  "image": "/images/icons/devicons/php-original.svg",                         "name": "PHP",        "alt": "PHP" },
+      { "id": 6,  "image": "/images/icons/devicons/figma-original.svg",                       "name": "Figma",      "alt": "Figma" },
+      { "id": 7,  "image": "/images/icons/devicons/unity-original.svg",                       "name": "Unity",      "alt": "Unity",     "whiteBg": true },
+      { "id": 8,  "image": "/images/icons/devicons/wordpress-plain.svg",                      "name": "WordPress",  "alt": "WordPress" },
+      { "id": 9,  "image": "/images/icons/devicons/docker-original.svg",                      "name": "Docker",     "alt": "Docker" },
+      { "id": 10, "image": "/images/icons/devicons/amazonwebservices-plain-wordmark.svg",     "name": "AWS",        "alt": "AWS" },
+      { "id": 11, "image": "/images/icons/devicons/flutter-original.svg",                     "name": "Flutter",    "alt": "Flutter" },
+      { "id": 12, "image": "/images/icons/devicons/mongodb-original.svg",                     "name": "MongoDB",    "alt": "MongoDB" }
+    ],
+    "row2": [
+      { "id": 1,  "image": "/images/icons/devicons/typescript-original.svg",   "name": "TypeScript",  "alt": "TypeScript" },
+      { "id": 2,  "image": "/images/icons/devicons/javascript-original.svg",   "name": "JavaScript",  "alt": "JavaScript" },
+      { "id": 3,  "image": "/images/icons/devicons/vuejs-original.svg",        "name": "Vue.js",      "alt": "Vue.js" },
+      { "id": 4,  "image": "/images/icons/devicons/angularjs-original.svg",    "name": "Angular",     "alt": "Angular" },
+      { "id": 5,  "image": "/images/icons/devicons/mysql-original.svg",        "name": "MySQL",       "alt": "MySQL" },
+      { "id": 6,  "image": "/images/icons/devicons/postgresql-original.svg",   "name": "PostgreSQL",  "alt": "PostgreSQL" },
+      { "id": 7,  "image": "/images/icons/devicons/graphql-plain.svg",         "name": "GraphQL",     "alt": "GraphQL" },
+      { "id": 8,  "image": "/images/icons/devicons/laravel-plain.svg",         "name": "Laravel",     "alt": "Laravel" },
+      { "id": 9,  "image": "/images/icons/devicons/csharp-original.svg",       "name": "C#",          "alt": "C#" },
+      { "id": 10, "image": "/images/icons/devicons/linux-original.svg",        "name": "Linux",       "alt": "Linux" },
+      { "id": 11, "image": "/images/icons/devicons/tailwindcss-plain.svg",     "name": "Tailwind",    "alt": "Tailwind CSS" },
+      { "id": 12, "image": "/images/icons/devicons/chrome-original.svg",       "name": "Chrome",      "alt": "Chrome" }
+    ]
+  }
+}

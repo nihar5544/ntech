@@ -3,21 +3,21 @@
 import { useState, useEffect, useRef } from "react";
 
 const ScrollAnimation = ({ triggered, setTriggered }) => {
-  // const [triggered, setTriggered] = useState(false);
   const triggerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
+      if (!triggerRef.current) return;
       const triggerPosition = triggerRef.current.getBoundingClientRect().top;
       const viewportHeight = window.innerHeight;
-
-      const triggerThreshold = 1;
-
-      if (!triggered && triggerPosition < viewportHeight * triggerThreshold) {
+      if (!triggered && triggerPosition < viewportHeight) {
         setTriggered(true);
-        // console.log('Animation triggered when div comes into view');
       }
     };
+
+    // Check immediately on mount in case element is already in viewport
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);

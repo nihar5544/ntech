@@ -1,20 +1,19 @@
 import Header from "@/components/header/Header";
 import "../public/styles/globals.css";
-import "./_document";
 import Head from "next/head";
-import Script from "next/script";
 import Footer from "@/components/footer/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "next-themes";
 
-export default function App({ Component, pageProps }) {
-  let schema = {
+function DefaultLayout({ children }) {
+  const schema = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
-    name: "coindelta",
-    url: "https://www.coindelta.io/",
+    name: "ntech",
+    url: "https://www.ntech.io/",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://www.coindelta.io/{search_term_string}",
+      target: "https://www.ntech.io/{search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -22,42 +21,39 @@ export default function App({ Component, pageProps }) {
   return (
     <main className="min-h-screen flex flex-col justify-between max-w-[2000px] mx-auto">
       <Head>
-        <title>Coindelta-Trusted Partner For Web3 Infrastructure</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        ></meta>
+        <title>ntech — Your Trusted Digital Solutions Partner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Coin Delta is trusted by some of the world's most credible asset management companies and high-net-worth investment professionals participating in staking."
+          content="ntech delivers professional web development, web applications, game development, graphic design, SEO, and IT support services for businesses worldwide."
         />
-        <meta
-          property="og:title"
-          content="Coindelta-Trusted Partner For Web3 Infrastructure"
-        />
-        <meta property="og:site_name" content="coindelta.io" />
-        <meta property="og:url" content="https://www.coindelta.io/" />
+        <meta property="og:title" content="ntech — Your Trusted Digital Solutions Partner" />
+        <meta property="og:site_name" content="ntech.io" />
+        <meta property="og:url" content="https://www.ntech.io/" />
         <meta
           property="og:description"
-          content="Coin Delta is trusted by some of the world's most credible asset management companies and high-net-worth investment professionals participating in staking."
+          content="ntech delivers professional web development, web applications, game development, graphic design, SEO, and IT support services for businesses worldwide."
         />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://www.coindelta.io/favicon.ico"
-        />
+        <meta property="og:image" content="https://www.ntech.io/favicon.ico" />
       </Head>
-
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-
       <Header />
-      <Component {...pageProps} />
+      {children}
       <Toaster />
-
       <Footer />
     </main>
+  );
+}
+
+export default function App({ Component, pageProps }) {
+  const getLayout = Component.getLayout ?? ((page) => <DefaultLayout>{page}</DefaultLayout>);
+  return (
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      {getLayout(<Component {...pageProps} />)}
+    </ThemeProvider>
   );
 }

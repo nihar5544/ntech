@@ -1,0 +1,78 @@
+{
+  "banner": {
+    "title": "Result-Driven SEO Services",
+    "description": "We help businesses rank higher, attract more organic traffic, and convert visitors into customers. Our data-driven SEO strategies are built for long-term visibility and sustainable growth on search engines.",
+    "schedualCallButton": { "title": "Schedule a Discovery Call" },
+    "projectCostButton": { "title": "Get Project Cost" },
+    "image": "https://placehold.co/550x500/010427/10b981?text=SEO+Services"
+  },
+  "developmentServices": {
+    "title": "Our SEO Services",
+    "description": "Comprehensive search engine optimization services that drive measurable results and lasting growth.",
+    "subtitle": "Complete SEO Solutions",
+    "cards": [
+      { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=On-Page+SEO", "title": "On-Page SEO", "description": "Optimize your pages with targeted keywords, meta tags, headers, content structure, and internal linking for maximum ranking potential." },
+      { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Technical+SEO", "title": "Technical SEO", "description": "Fix crawl issues, improve site speed, implement schema markup, and ensure your site is perfectly optimized for search engine bots." },
+      { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Link+Building", "title": "Link Building", "description": "Earn high-quality backlinks from authoritative websites through ethical white-hat outreach and content strategies." },
+      { "id": 4, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Local+SEO", "title": "Local SEO", "description": "Dominate local search results and Google Maps to attract customers searching for businesses in your area." },
+      { "id": 5, "image": "https://placehold.co/350x200/010427/7b44d6?text=SEO+Audit", "title": "SEO Audit & Strategy", "description": "Comprehensive website audits that identify technical issues, content gaps, and growth opportunities with an actionable roadmap." },
+      { "id": 6, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Content+SEO", "title": "Content SEO & Strategy", "description": "Keyword-driven content creation that educates your audience, earns links, and ranks for high-value search terms." }
+    ]
+  },
+  "automateTasks": {
+    "title": "Turn Organic Traffic into Predictable Revenue",
+    "description": "SEO is the highest ROI marketing channel for most businesses — but it requires expertise, consistency, and the right strategy. We take care of everything from technical audits to content creation, so you rank higher and convert more visitors every month.",
+    "image": "/images/extraBg.png",
+    "sideImage": "https://placehold.co/300x300/010427/10b981?text=SEO+Growth",
+    "Button": { "title": "Get Your Free SEO Audit", "link": "/contact-us", "icon": "" }
+  },
+  "ClientsTrustUs": {
+    "title": "Businesses Growing With Our SEO",
+    "subtitle": "We've helped businesses across every industry achieve first-page rankings and multiply their organic traffic.",
+    "list": [
+      { "id": 1, "image": "https://placehold.co/150x60/1a1a2e/9b30d9?text=GrowthCo", "title": "GrowthCo" },
+      { "id": 2, "image": "https://placehold.co/150x60/010427/7b44d6?text=LocalBiz", "title": "LocalBiz" },
+      { "id": 3, "image": "https://placehold.co/150x60/0d0d1f/6b00d7?text=ShopOnline", "title": "ShopOnline" },
+      { "id": 4, "image": "https://placehold.co/150x60/1a0a2e/9b30d9?text=ServicePro", "title": "ServicePro" },
+      { "id": 5, "image": "https://placehold.co/150x60/010427/7b44d6?text=StartupGrow", "title": "StartupGrow" },
+      { "id": 6, "image": "https://placehold.co/150x60/1a1a2e/6b00d7?text=MediaBrand", "title": "MediaBrand" }
+    ]
+  },
+  "moreUseCases": [
+    {
+      "title": "On-Site",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Keyword+Research", "title": "Keyword Research", "description": "Deep keyword research to identify high-value, achievable search terms your target audience is actively searching for." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Content+Optimization", "title": "Content Optimization", "description": "Rewrite and optimize existing pages to better match search intent, improve readability, and rank for target keywords." },
+        { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Page+Speed", "title": "Page Speed Optimization", "description": "Improve Core Web Vitals scores, reduce load times, and deliver a faster experience that Google rewards with higher rankings." }
+      ]
+    },
+    {
+      "title": "Off-Site",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/1a0a2e/9b30d9?text=Backlink+Strategy", "title": "Backlink Strategy", "description": "Building authoritative backlinks through guest posting, digital PR, resource link building, and broken link outreach." },
+        { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=Brand+Mentions", "title": "Brand Mentions & PR", "description": "Turning unlinked brand mentions into backlinks and securing digital PR coverage to boost domain authority." },
+        { "id": 3, "image": "https://placehold.co/350x200/1a1a2e/6b00d7?text=Competitor+Analysis", "title": "Competitor Analysis", "description": "Reverse-engineering what your top-ranking competitors are doing and developing strategies to outperform them." }
+      ]
+    },
+    {
+      "title": "Local & E-Commerce",
+      "cards": [
+        { "id": 1, "image": "https://placehold.co/350x200/0d0d1f/9b30d9?text=Google+Business", "title": "Google Business Optimization", "description": "Optimizing your Google Business Profile to appear in local map packs and attract nearby customers." },
+        { "id": 2, "image": "https://placehold.co/350x200/1a0a2e/7b44d6?text=Ecommerce+SEO", "title": "Ecommerce SEO", "description": "Product page optimization, category page SEO, and schema markup for online stores to drive purchase-ready traffic." },
+        { "id": 3, "image": "https://placehold.co/350x200/010427/6b00d7?text=SEO+Reporting", "title": "Monthly SEO Reporting", "description": "Transparent monthly reports showing keyword rankings, traffic growth, conversions, and ROI from your SEO investment." }
+      ]
+    }
+  ],
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Have questions about SEO? Here are answers to the most common questions we receive.",
+    "FAQcard": [
+      { "title": "How long does SEO take to show results?", "description": "SEO is a long-term strategy. Most businesses see meaningful ranking improvements within 3–6 months. Competitive niches may take 6–12 months. However, quick wins from technical fixes and on-page optimization can be visible within weeks." },
+      { "title": "Do you guarantee first-page rankings?", "description": "No ethical SEO agency can guarantee specific rankings — Google's algorithm constantly changes. What we guarantee is a proven, white-hat strategy, transparent reporting, and consistent effort to maximize your organic visibility." },
+      { "title": "What's the difference between on-page and off-page SEO?", "description": "On-page SEO covers everything on your website — content, keywords, structure, speed. Off-page SEO is about building your site's authority through backlinks and external signals. Both are essential for strong rankings." },
+      { "title": "Do you use white-hat SEO practices?", "description": "Absolutely. We use only Google-approved white-hat techniques. We never use black-hat tactics like keyword stuffing, link farms, or cloaking that could result in penalties." },
+      { "title": "How do you measure SEO success?", "description": "We track keyword rankings, organic traffic growth, click-through rates, conversion rates, and revenue attribution. Monthly reports show exactly where you started, where you are, and what we're doing next." }
+    ]
+  }
+}

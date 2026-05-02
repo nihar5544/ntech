@@ -1,0 +1,37 @@
+{
+  "banner": {
+    "title": "Digital Solutions for Corporate & Enterprise",
+    "description": "We build enterprise-grade websites, business applications, IT infrastructure, and digital strategies that help corporate organizations operate efficiently, communicate professionally, and grow strategically.",
+    "button": { "title": "Build Your Enterprise Solution", "link": "/contact-us" },
+    "bgImage": "/images/_herobg.webp"
+  },
+  "services": {
+    "title": "Corporate Digital Solutions We Deliver",
+    "description": "End-to-end digital services designed for the scale, security, and compliance requirements of enterprise businesses.",
+    "card": [
+      { "id": 1, "icon": "/images/icons/devicons/html5-original.svg", "title": "Corporate Websites", "description": "Professional, authoritative corporate websites with investor relations, careers pages, and detailed service showcases." },
+      { "id": 2, "icon": "/images/icons/devicons/react-original.svg", "title": "Enterprise Web Applications", "description": "Custom internal tools, CRM systems, employee portals, and business process automation applications." },
+      { "id": 3, "icon": "/images/icons/devicons/figma-original.svg", "title": "Corporate Branding & Design", "description": "Professional brand identities, presentation templates, and marketing materials for enterprise organizations." },
+      { "id": 4, "icon": "/images/icons/devicons/chrome-original.svg", "title": "Enterprise SEO", "description": "Comprehensive SEO strategies for large websites — technical SEO, content strategy, and authority building at scale." },
+      { "id": 5, "icon": "/images/icons/devicons/linux-original.svg", "title": "Managed IT Services", "description": "Complete managed IT support covering helpdesk, network management, cybersecurity, and cloud infrastructure." },
+      { "id": 6, "icon": "/images/icons/devicons/docker-original.svg", "title": "Cloud & Infrastructure", "description": "Cloud migration, DevOps pipelines, containerization, and scalable infrastructure for enterprise workloads." }
+    ]
+  },
+  "moreUseCases": {
+    "title": "Corporate Use Cases",
+    "cards": [
+      { "id": 1, "image": "https://placehold.co/350x200/1a1a2e/9b30d9?text=Intranet+Portal", "title": "Corporate Intranet Portals", "description": "Internal employee portals with document management, HR tools, announcements, and collaboration features." },
+      { "id": 2, "image": "https://placehold.co/350x200/010427/7b44d6?text=HR+System", "title": "HR & Talent Platforms", "description": "Recruitment systems, onboarding portals, performance management, and employee self-service applications." },
+      { "id": 3, "image": "https://placehold.co/350x200/0d0d1f/6b00d7?text=Analytics+Platform", "title": "Business Intelligence Dashboards", "description": "Real-time analytics dashboards connecting your business data sources for executive reporting and decision-making." }
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Enterprises Choose ntech",
+    "description": "We understand enterprise requirements — scalability, security, compliance, and the need for solutions that integrate with complex existing systems.",
+    "card": {
+      "description": "Our enterprise solutions are architected for security, performance, and scalability — built to handle demanding workloads while remaining maintainable.",
+      "subDesciption": "From initial strategy and architecture through development, deployment, and ongoing managed support — we're your full IT partner.",
+      "image": "https://placehold.co/400x300/010427/6b00d7?text=Enterprise+Solutions"
+    }
+  }
+}

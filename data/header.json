@@ -1,0 +1,37 @@
+{
+  "logo": "/images/logo.png",
+  "home": { "title": "Home", "link": "/" },
+  "about": { "title": "About Us", "link": "/about-us" },
+  "Services": "Services",
+  "servicesDropdown": [
+    {
+      "title": "Web Services",
+      "list": [
+        { "title": "Web Page", "link": "/services/web-page" },
+        { "title": "Web Application", "link": "/services/web-application" },
+        { "title": "Game Development", "link": "/services/game-development" },
+        { "title": "Graphic Designing", "link": "/services/graphic-designing" }
+      ]
+    },
+    {
+      "title": "Digital Growth",
+      "list": [
+        { "title": "SEO Services", "link": "/services/seo" },
+        { "title": "IT Service & Support", "link": "/services/it-service-support" }
+      ]
+    }
+  ],
+  "industryDropdown": {
+    "title": "Industries",
+    "list": [
+      { "title": "E-Commerce", "link": "/industry/ecommerce" },
+      { "title": "Healthcare", "link": "/industry/healthcare" },
+      { "title": "Gaming", "link": "/industry/gaming" },
+      { "title": "Corporate", "link": "/industry/corporate" }
+    ]
+  },
+  "hiredeveloper": { "title": "Hire Developer", "link": "/hire-developer" },
+  "clients": { "title": "Portfolio", "link": "/portfolio" },
+  "media": { "title": "Media", "link": "/media" },
+  "Button": { "title": "Get Started", "link": "/contact-us" }
+}

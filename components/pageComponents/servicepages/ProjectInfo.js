@@ -13,12 +13,7 @@ function ProjectInfo({ servicesData }) {
           <div
             className="px-8 rounded-2xl bg-no-repeat w-full bg-cover text-white lg:bg-right  grid md:grid-cols-2 grid-cols-1 max-sm:p-5 items-center  "
             style={{
-              backgroundImage: `url(${
-                process.env.NEXT_PUBLIC_BASE_URL
-              }${servicesData?.image?.data?.attributes?.url
-                ?.split("/")
-                ?.splice(1)
-                ?.join("/")})`,
+              backgroundImage: `url(${typeof servicesData?.image === "string" ? servicesData.image : `${process.env.NEXT_PUBLIC_BASE_URL}${servicesData?.image?.data?.attributes?.url?.split("/")?.splice(1)?.join("/")}`})`,
             }}
           >
             <div
